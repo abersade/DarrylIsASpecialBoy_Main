@@ -702,7 +702,7 @@ Achievements
 		tag:prestige
 
 
-	*towelsup1
+	*towelsach1
 		name:You Literally Have a Box of Them At Home
 		desc:I don't get the appeal. Earned by having 125 "Another Walleye Towel!" buildings.
 		req:125 towels
@@ -710,7 +710,7 @@ Achievements
         icon:icons[1,1]
 		tag:prestige
 
-	*towelsup2
+	*towelsach2
 		name:More Than One Box, Actually
 		desc:Soon you'll need to add a new room, just to house all the dang towels. Earned by having 250 "Another Walleye Towel!" buildings.
 		req:250 towels
