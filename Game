@@ -57,7 +57,6 @@ Resources
             lose tag:canlose
             end
         end
-        end
 		class:noBackground
         hidden when 0
 		show earned
