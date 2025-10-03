@@ -396,10 +396,18 @@ Upgrades
 //      owned
 //      always hidden
 
-
-
      *timepass
         on tick:yield 1 time
+        owned
+        always hidden
+
+     *fatalerror
+        passive:
+          if infamy>(100000*(1+(prestige*100)))
+            lose tage:canlose
+            end
+          else
+          end
         owned
         always hidden
 
@@ -728,9 +736,8 @@ Achievements
 
   	*whoops
 		name:Shouldn't Have Done That
-		desc: Well, at least you got to keep your attaboys.
+		desc: Can't Say I Didn't Warn You.
 		req:infamy>(100000*(1+(prestige*100)))
-        tag:canlose
 		on earn:lose tag:canlose
         icon:icons[1,1]
 		tag:prestige
