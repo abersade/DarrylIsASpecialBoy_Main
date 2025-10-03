@@ -201,6 +201,7 @@ Buildings
 *TEMPLATE
 		on click:anim glow
 
+/*
 	*testend
 		name:Annihilation
 		desc:It's your biggest (and only) fan! For now, anyways. Grants you 1 Fame per second.
@@ -208,8 +209,8 @@ Buildings
 		tag:building
         tag:canlose
 		cost:0 fame
-//        always hidden
-//        no buy
+        always hidden
+        no buy
 		on click:yield 1000000 infamy
 		unlocked
 
@@ -220,10 +221,11 @@ Buildings
 		tag:building
         tag:canlose
 		cost:0 fame
-//        always hidden
-//        no buy
+        always hidden
+        no buy
 		on click:lose 10000000 infamy
 		unlocked
+*/
 
 	*deskFan
 		name:Desk Fan
@@ -609,6 +611,8 @@ Upgrades
 
 
 
+
+
 // Prestige
 
 	*prestigetier1
@@ -719,6 +723,8 @@ Achievements
 		desc: Can't Say I Didn't Warn You.
 		req:infamy>(100000*(1+(prestige*100)))
 		on earn:lose tag:canlose
+        on earn:lose whoops
+        on earn:toast Shouldn't have done that, too much infamy. Try Again.
         icon:icons[1,1]
 		tag:prestige
 
