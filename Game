@@ -71,7 +71,7 @@ Resources
 		class:noBackground
         hidden when 0
         show earned
-
+/*
 	*infamywarn
 		name:Infamy Warning
 		desc:Yikes dude. Don't accumulate too much infamy, doing so has... consequences.
@@ -86,6 +86,7 @@ Resources
         end
 		class:noBackground
         always hidden
+*/
 
 	*time
 		name:Time
