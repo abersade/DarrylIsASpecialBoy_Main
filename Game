@@ -57,6 +57,7 @@ Resources
             lose tag:canlose
             end
         end
+        end
 		class:noBackground
         hidden when 0
 		show earned
@@ -81,7 +82,8 @@ Resources
           if (infamy>(100000*(0.5+(prestige*100))))
             toast Slow your roll buddy, too much infamy is being generated.
             end
-        end        
+        end
+        end
 		class:noBackground
         always hidden
 
