@@ -56,7 +56,6 @@ Resources
           if (infamy>(100000*(1+(prestige*100))))
             lose tag:canlose
             end
-        end
 		class:noBackground
         hidden when 0
 		show earned
