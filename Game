@@ -55,6 +55,7 @@ Resources
         on tick:
           if (infamy>(100000*(1+(prestige*100))))
             lose tag:canlose
+          end
 		class:noBackground
         hidden when 0
 		show earned
@@ -68,22 +69,6 @@ Resources
 		class:noBackground
         hidden when 0
         show earned
-/*
-	*infamywarn
-		name:Infamy Warning
-		desc:Yikes dude. Don't accumulate too much infamy, doing so has... consequences.
-		icon:
-        tag:resource
-        tag:canlose
-        on tick:
-          if (infamy>(100000*(0.5+(prestige*100))))
-            toast Slow your roll buddy, too much infamy is being generated.
-            end
-        end
-        end
-		class:noBackground
-        always hidden
-*/
 
 	*time
 		name:Time
