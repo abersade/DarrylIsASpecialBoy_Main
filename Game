@@ -51,11 +51,7 @@ Resources
 		desc:Yikes dude. Don't accumulate too much infamy, doing so has... consequences.
 		icon:
         tag:resource
-        tag:canlose
-        on tick:
-          if (infamy>(100000*(1+(prestige*100))))
-            lose tag:canlose
-        end        
+        tag:canlose  
 		class:noBackground
         hidden when 0
 		show earned
@@ -409,7 +405,13 @@ Upgrades
         owned
         always hidden
 
-
+      *fatalError
+        on tick:
+          if (infamy>(100000*(1+(prestige*100))))
+            lose tag:canlose
+        end
+        owned
+        always hidden
 
 //Visible Upgrades
 	*lotsofpractice1
