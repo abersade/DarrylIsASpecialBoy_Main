@@ -1,0 +1,556 @@
+Let's make a game!
+
+	name:DarrylIsASpecialBoy
+	by:Abersade
+	desc:Currently this is a test.
+	created:29/9/2025
+	updated:3/10/2025
+	version:1.03
+
+Settings
+	background:
+	building cost increase:110%
+	building cost refund:10%
+    spritesheet:icons, 48 by 48, https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/837844/building_6x6.jpg?1520844130
+    background:http://www.colorhexa.com/000000.png
+    stylesheet:https://pastebin.com/raw/ahFnmcEU
+
+Layout
+	use default
+		
+Buttons
+	*thumbButton
+		name:Hide the Fame Harold
+		desc:Click this button to embiggen your numbers!
+		on click:anim icon wobble
+		on click:
+			if (chance (99%)) yield 1 fame
+            if (chance (5%)) yield 1 infamy
+            if (chance (1%)) yield 5 infamy
+		end	 
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1522386/yeah.png?1759185006
+		no text
+		class:bigButton hasFlares
+		icon class:shadowed
+		tooltip origin:bottom
+		tooltip class:red
+		
+Resources
+
+	*fame
+		name:Fame
+		desc:Fame, the source of your specialness!
+		icon:
+        tag:resource
+        tag:canlose
+		class:noBackground
+		show earned
+
+	*infamy
+		name:Infamy
+		desc:Yikes dude. Don't accumulate too much infamy, doing so has... consequences.
+		icon:
+        tag:resource
+        tag:canlose
+		class:noBackground
+        hidden when 0
+		show earned
+		
+
+	*attaboy|attaboys
+		name:Attaboy
+		desc:Proof that Darryl is the extra most special boy to ever walk the earth. Spend these on Prestige.
+		icon:
+		tag:prestige
+		class:noBackground
+        hidden when 0
+        show earned
+
+	*infamywarn
+		name:Infamy Warning
+		desc:Yikes dude. Don't accumulate too much infamy, doing so has... consequences.
+		icon:
+        tag:resource
+        tag:canlose
+		class:noBackground
+        always hidden
+
+	*time
+		name:Time
+		desc:1 Time = 1 tick. In theory
+		icon:
+        tag:resource
+		class:noBackground
+        always hidden
+
+	*prestige
+		name:Prestige Level
+		desc:Each time you prestige, you get one of these.
+		icon:
+        tag:resource
+        tag:prestige
+		class:noBackground
+
+    *dfm1
+        tag:resource
+        tag:canlose
+		class:noBackground
+        always hidden
+
+    *mmm1
+        tag:resource
+        tag:canlose
+		class:noBackground
+        always hidden
+
+    *ptm1
+        tag:resource
+        tag:canlose
+		class:noBackground
+        always hidden
+
+    *twm1
+        tag:resource
+        tag:canlose
+		class:noBackground
+        always hidden
+
+
+
+		
+Shinies
+
+*yourespecial
+  name:So Special
+  on click:
+     yield (random(100,10000)) fame
+     toast So Special, you gained some fame!
+   end
+  movement:anywhere fade randomAngle bounce moveRandom
+  frequency:110
+  frequency variation:20
+  icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1522377/special.png?1759182340
+
+*extraspecial
+  name:So VERY Special
+  on click:
+     yield (random(10,1000)) infamy
+     toast Not Special Enough! You gained some Infamy, yay!
+   end
+  movement:anywhere fade randomAngle bounce moveRandom
+  frequency:240
+  frequency variation:45
+  icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1522378/veryspecial.png?1759182408
+
+
+
+
+Buildings
+
+*TEMPLATE
+		on click:anim glow
+
+	*testend
+		name:Annihilation
+		desc:It's your biggest (and only) fan! For now, anyways. Grants you 1 Fame per second.
+		icon:icons[1,0]
+		tag:building
+        tag:canlose
+		cost:0 fame
+//        always hidden
+//        no buy
+		on click:yield 1000000 infamy
+		unlocked
+
+	*unoreverse
+		name:Uno Reverse
+		desc:It's your biggest (and only) fan! For now, anyways. Grants you 1 Fame per second.
+		icon:icons[1,0]
+		tag:building
+        tag:canlose
+		cost:0 fame
+//        always hidden
+//        no buy
+		on click:lose 10000000 infamy
+		unlocked
+
+	*deskFan
+		name:Desk Fan
+		desc:It's your biggest (and only) fan! For now, anyways. Grants you 1 base Fame per second, currently earning you [dfm1:ps] fame per second.
+		icon:icons[1,0]
+		tag:building
+        tag:canlose
+		cost:15 fame
+		on tick:yield (1+(prestige*2)) fame
+		on tick:yield (1+(prestige*2)) dfm1
+		unlocked
+
+	*mandms
+		name:M&M's!
+		desc:Your co-workers are ALWAYS willing to accept bribes. Grants you 5 base Fame per second, currently earning you [mmm1:ps] fame per second.
+		icon:icons[0,0]
+        tag:building
+        tag:canlose
+		cost:100 fame
+		on tick:yield (5+(prestige*2)) fame
+		on tick:yield (5+(prestige*2)) mmm1
+		req:100 fame:earned
+
+	*puppyTime
+		name:Get Yourself a Puppy
+		desc:Who doesn't love puppies? They don't provide much fame, but buying them is a great way to use up some infamy. Grants you 1 base Fame per second, currently earning you [ptm1:ps] fame per second.
+		icon:icons[0,0]
+        tag:building
+        tag:canlose
+		cost:2 infamy
+        cost increase:101%
+		on tick:yield (1+(prestige*2)) fame
+		on tick:yield (1+(prestige*2)) ptm1
+		req:200 fame:earned
+
+	*towels
+		name:Another Walleye Towel!
+		desc:How many of these freaking things do you own?! Grants you 10 base Fame per second, currently earning you [twm1:ps] fame per second.
+		icon:icons[0,0]
+        tag:building
+        tag:canlose
+		cost:250 fame
+		on tick:yield (10+(prestige*2)) fame
+		on tick:yield (10+(prestige*2)) twm1
+		req:600 fame:earned
+
+	*cubicleRaid
+		name:Cubicle Raid
+		desc:Look at you, scavenging equipment from a different cubicle. Grants you 20 Fame per second.
+		icon:icons[0,0]
+        tag:building
+        tag:canlose
+		cost:3000 fame
+		on tick:yield 20 fame
+		req:1500 fame:earned
+
+	*starchSnacks
+		name:Bag O Snacks
+		desc:Pretzels and chips, but what's for lunch? Grants you 50 Fame per second.
+		icon:icons[0,0]
+        tag:building
+        tag:canlose
+		cost:20000 fame
+		on tick:yield 50 fame
+		req:10000 fame:earned
+
+	*casinoTime
+		name:Time to Gamble
+		desc:Off to the casino again, let's see if you're a winner! Grants you 200 Fame and 1 Infamy per second.
+		icon:icons[0,0]
+        tag:building
+        tag:canlose
+		cost:300000 fame
+		on tick:yield 200 fame
+		on tick:yield 1 infamy
+		req:100000 fame:earned
+
+	*cruiseTime
+		name:Cruisin USA
+		desc:Vacation, honeymoon, or just because? Grants you 1000 Fame per second, and reduces your Infamy by 1 Infamy per second.
+		icon:icons[0,0]
+        tag:building
+        tag:canlose
+		cost:5000000 fame
+		on tick:yield 1000 fame
+		on tick:lose 1 infamy
+		req:2000000 fame:earned
+
+	*weeklySecMeet
+		name:Attend Another Weekly Security Meeting
+		desc:These are so boring. Grants you 100 Fame per second, at first. Plug some of those security gaps to increase.
+		icon:icons[0,0]
+        tag:building
+        tag:canlose
+		cost:20000000 fame
+        on tick:yield 100 fame
+        passive:multiply yield of weeklySecMeet by 1.1
+		req:5000000 fame:earned
+
+	*larryLore
+		name:You Learned Something Cool From Larry
+		desc:You never know when Larry will chime in with some fact that is equal parts relevant and borderline unbelievable. Grants you 2000 Fame per second and just makes you better overall.
+		icon:icons[0,0]
+        tag:building
+        tag:canlose
+		cost:75000000 fame
+        on tick:yield 2000 fame
+        passive:multiply yield of :Buildings by 1.05
+		req:10000000 fame:earned
+
+	*monthlyIPMeet
+		name:Attend Another Monthly IP Meeting
+		desc:Meetings SUUUUCK. Grants you 7500 Fame per second. Maybe you'll find some donuts in there.
+		icon:icons[0,0]
+        tag:building
+        tag:canlose
+		cost:125000000 fame
+        on tick:yield 7500 fame
+		req:50000000 fame:earned
+
+
+Upgrades
+	*TEMPLATE
+		on click:anim glow
+
+//Mechanics	
+
+//	*aggfame
+//		name:Aggregate Fame Adjustment
+//		desc:Adjusts Fame
+//		icon:icons[1,1]
+//		passive:multiply fame yield of :Buildings by (1+(fame*-0.0000001))
+//      owned
+//      always hidden
+
+//	*agginfamy
+//		name:Aggregate Infamy Adjustment
+//		desc:Adjusts Infamy
+//		icon:icons[1,1]
+//		passive:multiply infamy yield of :Buildings by (1+(infamy*0.001))
+//      owned
+//      always hidden
+
+
+
+     *timepass
+        on tick:yield 1 time
+        owned
+        always hidden
+
+
+//Visible Upgrades
+	*lotsofpractice1
+		name:That Sure Was A Lot Of Clicking
+		desc:You've been practicing, and can finally find those M&Ms that you left on the floor. <//><b>Effect:</b><.> Embiggening your numbers via clicking is a bit faster. Grants you +2 Fame per button press.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:50 fame
+		passive:increase fame yield of thumbButton by 2
+		req:40 thumbButton:clicks
+
+	*lotsofpractice2
+		name:Another Lot Of Clicking
+		desc:Now you can catch the M&Ms BEFORE you drop them. <//><b>Effect:</b><.> Embiggening your numbers via clicking is a bit faster, again. Grants you +7 Fame per button press.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:500 fame
+		passive:increase fame yield of thumbButton by 7
+		req:400 thumbButton:clicks
+
+	*lotsofpractice3
+		name:So Much Clicking
+		desc:Still bored I suppose. <//><b>Effect:</b><.> Embiggening your numbers via clicking is significantly faster. Grants you +90 Fame per button press.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:500000 fame
+		passive:increase fame yield of thumbButton by 90
+		req:2500 thumbButton:clicks
+
+	*boring1
+		name:This is too slow for me.
+		desc:Having a short attention span has its drawbacks, but this isn't one of them. Grants you a 200% modifier to all button presses.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:50 infamy
+        passive:multiply fame yield of thumbButton by 2
+        passive:multiply infamy yield of thumbButton by 2
+		req:700 thumbButton:clicks
+
+	*boring2
+		name:Josh also thinks it's boring.
+		desc:Well fine then, does this help? Grants you a 5000% modifier to all button presses.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:2500 infamy
+        passive:multiply fame yield of thumbButton by 50
+        passive:multiply infamy yield of thumbButton by 50
+		req:1100 thumbButton:clicks
+
+	*fanup1
+		name:Blown Away
+		desc:Turns out those fans can really push some air. Increases cost of Desk Fan by 1000% and fame yield of all buildings by 150%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:150 infamy
+        passive:multiply cost of deskFan by 10
+        passive:multiply yield of :Buildings by 1.5
+		req:50 deskFan
+
+	*fanup2
+		name:Desknado
+		desc:This is just too many fans. Increases cost of Desk Fan by 1000% and fame yield of all buildings by 150%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:1500 infamy
+        passive:multiply cost of deskFan by 10
+        passive:multiply yield of :Buildings by 1.5
+		req:75 deskFan
+
+	*mandmsup1
+		name:Never Ending Supply
+		desc:People are willing to overlook quite a bit when candy is available. Increases cost of M&M's by 100%, increases M&M's fame generation by 150%, and decreases Infamy gained per button click by 20%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:200 infamy
+        passive:multiply cost of mandms by 2
+        passive:multiply yield of mandms by 1.5
+        passive:multiply infamy yield of thumbButton by 0.8
+		req:50 mandms
+
+	*puppyup1
+		name:Brag About Your Puppy
+		desc:Tell your coworkers all about your new dog. Increases Infamy cost of Get Yourself a Puppy by 500%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:25 infamy
+        passive:multiply cost of puppyTime by 5
+		req:600 thumbButton:clicks
+
+	*puppyup2
+		name:Show Everyone Pictures of Your Puppy
+		desc:It's like telling everyone about your puppy, but with pictures! Increases Infamy cost of Get Yourself a Puppy by 500%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:250 infamy
+        passive:multiply cost of puppyTime by 5
+		req:1600 thumbButton:clicks
+
+	*wasps
+		name:WASPS
+		desc:Flail around hilariously. Increases your Fame from your buildings by 250%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:200 infamy
+        passive:multiply fame yield of :Buildings by 2.5
+		req:550 thumbButton:clicks
+
+	*wasps2
+		name:WASPS AGAIN
+		desc:"Do I need to get the clipboard?" Increases your Fame from your buildings by 500%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:1000 infamy
+        passive:multiply fame yield of :Buildings by 5
+		req:1000 thumbButton:clicks
+
+	*john1
+		name:Imply that John is old.
+		desc:Gee, thanks Darryl. Grants you a single attaboy, and grants you +1 Infamy per button press that triggers Infamy (1/100).
+		icon:icons[1,1]
+        tag:upgrade
+		cost:5 infamy
+		passive:increase infamy yield of thumbButton by 1
+        passive:grant 1 attaboy
+		req:500 thumbButton:clicks
+        req:fame>2000000
+
+	*john2
+		name:You Ate John's Donut.
+		desc:Gee, thanks Darryl. Unlocks Prestiging by granting another attaboy.
+		icon:icons[1,1]
+        tag:upgrade
+		cost:5000 infamy
+		passive:increase infamy yield of thumbButton by 10
+        passive:grant 1 attaboy
+		req:2000 thumbButton:clicks
+        req:fame>10000000
+
+	*prestige1a
+		name:Good Job!
+		desc:Lookit you go. This upgrade massively speeds up clicking.
+		icon:icons[1,1]
+        tag:upgrade
+		cost:1 attaboy
+        passive:multiply fame yield of thumbButton by 20
+        passive:multiply infamy yield of thumbButton by 20
+		req:prestigetier1
+
+	*prestige1b
+		name:Good Job!
+		desc:Lookit you go. This upgrade massively speeds up buildings.
+		icon:icons[1,1]
+        tag:upgrade
+		cost:1 attaboy
+        passive:multiply fame yield of :Buildings by 20
+		req:prestigetier1
+
+
+
+
+
+// Prestige
+
+	*prestigetier1
+		name:Prestige - Upgraded Cubicle
+		desc:Your tiny cubicle has been embiggened. Do you think that you can take it to even greater heights?
+		icon:icons[1,1]
+		cost:2 attaboys
+		on earn:lose tag:canlose
+        on earn:yield 1 prestige
+		req:2 attaboy:earned
+
+
+Achievements
+	*TEMPLATE
+		on click:anim glow
+		
+	*clickAchiev1
+		name:Beginning Embiggener
+		desc:You clicked <b>3500</b> times. That's sure something.
+		req:3500 thumbButton clicks
+        passive:grant 1 attaboy
+        icon:icons[1,1]
+		tag:prestige
+
+	*clickAchiev2
+		name:Five Second Rule
+		desc:What, and just throw them away?! Earned by having 75 M&Ms.
+		req:75 mandms
+        passive:grant 1 attaboy
+        icon:icons[1,1]
+		tag:prestige
+
+	*puppies1
+		name:Now That's A Pile Of Puppies
+		desc:So much hair. Earned by having 350 "Get Yourself a Puppy" buildings.
+		req:350 puppyTime
+        passive:grant 1 attaboy
+        icon:icons[1,1]
+		tag:prestige
+
+  	*speedround1
+		name:Now That's What I Call Podracing
+		desc:Dang, that was actually pretty quick. Earned by buying the "Another Lot of Clicking" upgrade within 90 seconds of starting the game.
+		req:lotsofpractice2 and time<90
+        passive:grant 1 attaboy
+        icon:icons[1,1]
+		tag:prestige
+
+  	*whoops
+		name:Shouldn't Have Done That
+		desc: Well, at least you got to keep your attaboys.
+		req:infamy>(100000*(1+(prestige*100)))
+        tag:canlose
+		on earn:lose tag:canlose
+        icon:icons[1,1]
+		tag:prestige
+
+
