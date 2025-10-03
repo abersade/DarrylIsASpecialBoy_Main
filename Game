@@ -455,7 +455,7 @@ Upgrades
 		cost:2500 infamy
         passive:multiply fame yield of thumbButton by 50
         passive:multiply infamy yield of thumbButton by 50
-		req:1100 thumbButton:clicks
+		req:2000 thumbButton:clicks
 
 	*fanup1
 		name:Blown Away
