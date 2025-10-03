@@ -84,8 +84,8 @@ Resources
         always hidden
 
 	*prestige
-		name:Prestige Level
-		desc:Each time you prestige, you get one of these.
+		name:Darryl's SPECIAL Meter
+		desc:Each time you prestige, this goes up by one.
 		icon:
         tag:resource
         tag:prestige
