@@ -52,6 +52,12 @@ Resources
 		icon:
         tag:resource
         tag:canlose
+        on tick:
+          if infamy>(100000*(1+(prestige*100)))
+            lose tage:canlose
+            end
+          else
+          end
 		class:noBackground
         hidden when 0
 		show earned
@@ -401,15 +407,6 @@ Upgrades
         owned
         always hidden
 
-     *fatalerror
-        passive:
-          if infamy>(100000*(1+(prestige*100)))
-            lose tage:canlose
-            end
-          else
-          end
-        owned
-        always hidden
 
 
 //Visible Upgrades
