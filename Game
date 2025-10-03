@@ -115,6 +115,66 @@ Resources
 		class:noBackground
         always hidden
 
+    *crm1
+        tag:resource
+        tag:canlose
+		class:noBackground
+        always hidden
+
+    *ssm1
+        tag:resource
+        tag:canlose
+		class:noBackground
+        always hidden
+
+    *ctm1
+        tag:resource
+        tag:canlose
+		class:noBackground
+        always hidden
+
+    *ctm2
+        tag:resource
+        tag:canlose
+		class:noBackground
+        always hidden
+
+    *crtm1
+        tag:resource
+        tag:canlose
+		class:noBackground
+        always hidden
+
+    *crtm2
+        tag:resource
+        tag:canlose
+		class:noBackground
+        always hidden
+
+    *smm1
+        tag:resource
+        tag:canlose
+		class:noBackground
+        always hidden
+
+    *llm1
+        tag:resource
+        tag:canlose
+		class:noBackground
+        always hidden
+
+    *ipm1
+        tag:resource
+        tag:canlose
+		class:noBackground
+        always hidden
+
+    *bsm1
+        tag:resource
+        tag:canlose
+		class:noBackground
+        always hidden
+
 
 
 		
@@ -221,77 +281,97 @@ Buildings
 
 	*cubicleRaid
 		name:Cubicle Raid
-		desc:Look at you, scavenging equipment from a different cubicle. Grants you 20 Fame per second.
+		desc:Look at you, scavenging equipment from a different cubicle. Grants you 20 base Fame per second, currently earning you [crm1:ps] fame per second.
 		icon:icons[0,0]
         tag:building
         tag:canlose
 		cost:3000 fame
-		on tick:yield 20 fame
+		on tick:yield (20+(prestige*2)) fame
+		on tick:yield (20+(prestige*2)) crm1
 		req:1500 fame:earned
 
 	*starchSnacks
 		name:Bag O Snacks
-		desc:Pretzels and chips, but what's for lunch? Grants you 50 Fame per second.
+		desc:Pretzels and chips, but what's for lunch? Grants you 50 base Fame per second, currently earning you [ssm1:ps] fame per second.
 		icon:icons[0,0]
         tag:building
         tag:canlose
 		cost:20000 fame
-		on tick:yield 50 fame
-		req:10000 fame:earned
+		on tick:yield (50+(prestige*2)) fame
+		on tick:yield (50+(prestige*2)) ssm1
+		req:12000 fame:earned
 
 	*casinoTime
 		name:Time to Gamble
-		desc:Off to the casino again, let's see if you're a winner! Grants you 200 Fame and 1 Infamy per second.
+		desc:Off to the casino again, let's see if you're a winner! Grants you 200 base Fame per second and 1 base infamy per second, currently earning you [ctm1:ps] fame per second and [ctm2:ps] infamy per second.
 		icon:icons[0,0]
         tag:building
         tag:canlose
 		cost:300000 fame
-		on tick:yield 200 fame
-		on tick:yield 1 infamy
+		on tick:yield (200+(prestige*2)) fame
+		on tick:yield (200+(prestige*2)) ctm1
+		on tick:yield (1+(prestige*2)) infamy
+		on tick:yield (1+(prestige*2)) ctm2
 		req:100000 fame:earned
 
 	*cruiseTime
 		name:Cruisin USA
-		desc:Vacation, honeymoon, or just because? Grants you 1000 Fame per second, and reduces your Infamy by 1 Infamy per second.
+		desc:Vacation, honeymoon, or just because? Grants you 1000 base Fame per second and reduces your base infamy by 1 per second, currently earning you [crtm1:ps] fame per second and removing [crtm2:ps] infamy per second.
 		icon:icons[0,0]
         tag:building
         tag:canlose
-		cost:5000000 fame
-		on tick:yield 1000 fame
-		on tick:lose 1 infamy
+		cost:6000000 fame
+		on tick:yield (1000+(prestige*2)) fame
+		on tick:yield (1000+(prestige*2)) crtm1
+		on tick:lose (1+(prestige*2)) infamy
+		on tick:yield (1+(prestige*2)) crtm2
 		req:2000000 fame:earned
 
 	*weeklySecMeet
 		name:Attend Another Weekly Security Meeting
-		desc:These are so boring. Grants you 100 Fame per second, at first. Plug some of those security gaps to increase.
+		desc:These are so boring. Grants you 100 base Fame per second, at first. Attending more security meetings to increase. Currently earning you [smm1:ps] fame per second.
 		icon:icons[0,0]
         tag:building
         tag:canlose
 		cost:20000000 fame
-        on tick:yield 100 fame
+		on tick:yield (100+(prestige*2)) fame
+		on tick:yield (100+(prestige*2)) smm1
         passive:multiply yield of weeklySecMeet by 1.1
-		req:5000000 fame:earned
+		req:7000000 fame:earned
 
 	*larryLore
 		name:You Learned Something Cool From Larry
-		desc:You never know when Larry will chime in with some fact that is equal parts relevant and borderline unbelievable. Grants you 2000 Fame per second and just makes you better overall.
+		desc:You never know when Larry will chime in with some fact that is equal parts relevant and borderline unbelievable. Grants you 2000 base Fame per second and just makes you better overall. Currently earning you [llm1:ps] fame per second.
 		icon:icons[0,0]
         tag:building
         tag:canlose
 		cost:75000000 fame
-        on tick:yield 2000 fame
+		on tick:yield (2000+(prestige*2)) fame
+		on tick:yield (2000+(prestige*2)) llm1
         passive:multiply yield of :Buildings by 1.05
-		req:10000000 fame:earned
+		req:15000000 fame:earned
 
 	*monthlyIPMeet
 		name:Attend Another Monthly IP Meeting
-		desc:Meetings SUUUUCK. Grants you 7500 Fame per second. Maybe you'll find some donuts in there.
+		desc:Meetings SUUUUCK. Grants you 7500 base Fame per second. Maybe you'll find some donuts in there. Currently earning you [ipm1:ps] fame per second.
 		icon:icons[0,0]
         tag:building
         tag:canlose
 		cost:125000000 fame
-        on tick:yield 7500 fame
-		req:50000000 fame:earned
+		on tick:yield (7500+(prestige*2)) fame
+		on tick:yield (7500+(prestige*2)) ipm1
+		req:100000000 fame:earned
+
+	*budgetSeason
+		name:Submit Your Budget Requests
+		desc:That way they can promptly be ignored! Grants you 15000 base Fame per second. Currently earning you [bsm1:ps] fame per second.
+		icon:icons[0,0]
+        tag:building
+        tag:canlose
+		cost:1250000000 fame
+		on tick:yield (15000+(prestige*2)) fame
+		on tick:yield (15000+(prestige*2)) bsm1
+		req:2000000000 fame:earned
 
 
 Upgrades
@@ -411,6 +491,18 @@ Upgrades
         passive:multiply infamy yield of thumbButton by 0.8
 		req:50 mandms
 
+	*mandmsup2
+		name:Devious Nature
+		desc:Mix some Skittles in there just to throw us off. Increases cost of M&M's by 1000%, increases M&M's fame generation by 250%, and increases Infamy gained per building by 100%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:4000 infamy
+        passive:multiply cost of mandms by 10
+        passive:multiply yield of mandms by 2.5
+        passive:multiply infamy yield of :Buildings by 2
+		req:100 mandms
+
 	*puppyup1
 		name:Brag About Your Puppy
 		desc:Tell your coworkers all about your new dog. Increases Infamy cost of Get Yourself a Puppy by 500%.
@@ -431,6 +523,17 @@ Upgrades
         passive:multiply cost of puppyTime by 5
 		req:1600 thumbButton:clicks
 
+	*puppyup3
+		name:There Ought to be a Limit
+		desc:You've gathered so many puppies in one place that people are starting to become suspicious. Increases Infamy cost of Get Yourself a Puppy by 1000%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:250 infamy
+        passive:multiply cost of puppyTime by 10
+		req:3600 thumbButton:clicks
+        req:100 puppyTime
+
 	*wasps
 		name:WASPS
 		desc:Flail around hilariously. Increases your Fame from your buildings by 250%.
@@ -449,7 +552,7 @@ Upgrades
         tag:canlose
 		cost:1000 infamy
         passive:multiply fame yield of :Buildings by 5
-		req:1000 thumbButton:clicks
+		req:2000 thumbButton:clicks
 
 	*john1
 		name:Imply that John is old.
@@ -472,6 +575,7 @@ Upgrades
         passive:grant 1 attaboy
 		req:2000 thumbButton:clicks
         req:fame>10000000
+        req:monthlyIPMeet>=1
 
 	*prestige1a
 		name:Good Job!
@@ -492,6 +596,26 @@ Upgrades
         passive:multiply fame yield of :Buildings by 20
 		req:prestigetier1
 
+	*prestige2a
+		name:Good Job!
+		desc:Lookit you go. This upgrade massively speeds up clicking.
+		icon:icons[1,1]
+        tag:upgrade
+		cost:1 attaboy
+        passive:multiply fame yield of thumbButton by 20
+        passive:multiply infamy yield of thumbButton by 20
+		req:prestigetier2
+
+	*prestige2b
+		name:Good Job!
+		desc:Lookit you go. This upgrade massively speeds up buildings.
+		icon:icons[1,1]
+        tag:upgrade
+		cost:1 attaboy
+        passive:multiply fame yield of :Buildings by 20
+		req:prestigetier2
+
+
 
 
 
@@ -507,6 +631,15 @@ Upgrades
         on earn:yield 1 prestige
 		req:2 attaboy:earned
 
+	*prestigetier2
+		name:Prestige - Upgraded Cubicle
+		desc:Your tiny cubicle has been embiggened. Do you think that you can take it to even greater heights?
+		icon:icons[1,1]
+		cost:3 attaboys
+		on earn:lose tag:canlose
+        on earn:yield 1 prestige
+		req:6 attaboy:earned
+
 
 Achievements
 	*TEMPLATE
@@ -521,6 +654,22 @@ Achievements
 		tag:prestige
 
 	*clickAchiev2
+		name:Amateur Embiggener
+		desc:You clicked <b>5000</b> times. That's sure something.
+		req:5000 thumbButton clicks
+        passive:grant 1 attaboy
+        icon:icons[1,1]
+		tag:prestige
+
+	*clickAchiev3
+		name:Professional Embiggener
+		desc:You clicked <b>10000</b> times. That's sure something.
+		req:10000 thumbButton clicks
+        passive:grant 1 attaboy
+        icon:icons[1,1]
+		tag:prestige
+
+	*mandmandms1
 		name:Five Second Rule
 		desc:What, and just throw them away?! Earned by having 75 M&Ms.
 		req:75 mandms
@@ -532,6 +681,39 @@ Achievements
 		name:Now That's A Pile Of Puppies
 		desc:So much hair. Earned by having 350 "Get Yourself a Puppy" buildings.
 		req:350 puppyTime
+        passive:grant 1 attaboy
+        icon:icons[1,1]
+		tag:prestige
+
+	*onlyFans
+		name:Where Did You Get All of This Desk Space?
+		desc:Why do you have so many fans? Earned by having 150 "Desk Fan" buildings.
+		req:150 deskFan
+        passive:grant 1 attaboy
+        icon:icons[1,1]
+		tag:prestige
+
+	*onlyFans2
+		name:Learn Some Restraint
+		desc:Are you being serious right now? Earned by having 350 "Desk Fan" buildings.
+		req:350 deskFan
+        passive:grant 1 attaboy
+        icon:icons[1,1]
+		tag:prestige
+
+
+	*towelsup1
+		name:You Literally Have a Box of Them At Home
+		desc:I don't get the appeal. Earned by having 125 "Another Walleye Towel!" buildings.
+		req:125 towels
+        passive:grant 1 attaboy
+        icon:icons[1,1]
+		tag:prestige
+
+	*towelsup1
+		name:More Than One Box, Actually
+		desc:Soon you'll need to add a new room, just to house all the dang towels. Earned by having 250 "Another Walleye Towel!" buildings.
+		req:250 towels
         passive:grant 1 attaboy
         icon:icons[1,1]
 		tag:prestige
