@@ -55,9 +55,7 @@ Resources
         on tick:
           if infamy>(100000*(1+(prestige*100)))
             lose tage:canlose
-            end
-          else
-          end
+        end        
 		class:noBackground
         hidden when 0
 		show earned
@@ -78,6 +76,10 @@ Resources
 		icon:
         tag:resource
         tag:canlose
+        on tick:
+          if infamy>(100000*(0.5+(prestige*100)))
+            toast Slow your roll buddy, too much infamy is being generated.
+        end        
 		class:noBackground
         always hidden
 
