@@ -219,7 +219,7 @@ Buildings
 		tag:building
         tag:canlose
 		cost:0 fame
-//        always hidden
+       always hidden
 //        no buy
 		on click:yield 1000000 infamy
 		unlocked
@@ -231,7 +231,7 @@ Buildings
 		tag:building
         tag:canlose
 		cost:0 fame
-//        always hidden
+       always hidden
 //        no buy
 		on click:lose 10000000 infamy
 		unlocked
