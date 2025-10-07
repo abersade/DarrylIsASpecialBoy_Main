@@ -4,8 +4,8 @@ Let's make a game!
 	by:Abersade
 	desc:Currently this is a test.
 	created:29/9/2025
-	updated:3/10/2025
-	version:1.03
+	updated:6/10/2025
+	version:1.04
 
 Settings
 	background:
@@ -166,6 +166,18 @@ Resources
 		class:noBackground
         always hidden
 
+    *srm1
+        tag:resource
+        tag:canlose
+		class:noBackground
+        always hidden
+
+    *yrm1
+        tag:resource
+        tag:canlose
+		class:noBackground
+        always hidden
+
 
 
 		
@@ -201,7 +213,6 @@ Buildings
 *TEMPLATE
 		on click:anim glow
 
-/*
 	*testend
 		name:Annihilation
 		desc:It's your biggest (and only) fan! For now, anyways. Grants you 1 Fame per second.
@@ -209,8 +220,8 @@ Buildings
 		tag:building
         tag:canlose
 		cost:0 fame
-        always hidden
-        no buy
+//        always hidden
+//        no buy
 		on click:yield 1000000 infamy
 		unlocked
 
@@ -221,11 +232,10 @@ Buildings
 		tag:building
         tag:canlose
 		cost:0 fame
-        always hidden
-        no buy
+//        always hidden
+//        no buy
 		on click:lose 10000000 infamy
 		unlocked
-*/
 
 	*deskFan
 		name:Desk Fan
@@ -342,7 +352,6 @@ Buildings
 		on tick:yield (2000+(prestige*2)) fame
 		on tick:yield (2000+(prestige*2)) llm1
         passive:multiply yield of :Buildings by 1.05
-        passive:multiply fame yield of :Buttons by 1.05
 		req:15000000 fame:earned
 
 	*monthlyIPMeet
@@ -366,6 +375,28 @@ Buildings
 		on tick:yield (15000+(prestige*2)) fame
 		on tick:yield (15000+(prestige*2)) bsm1
 		req:2000000000 fame:earned
+
+	*selfReview
+		name:Submit Your Yearly Self Review
+		desc:These things are the freaking worst. Hate hate HATE them. Grants you 1,000,000 base Fame per second. Currently earning you [srm1:ps] fame per second.
+		icon:icons[0,0]
+        tag:building
+        tag:canlose
+		cost:1250000000000000000000 fame
+		on tick:yield (1000000+(prestige*2)) fame
+		on tick:yield (1000000+(prestige*2)) srm1
+		req:200000000000 fame:earned
+
+	*yearlyReview
+		name:It's your Annual Review!!!
+		desc:Time to find out how much you're worth. Grants you 1,000,000,000 base Fame per second. Currently earning you [yrm1:ps] fame per second.
+		icon:icons[0,0]
+        tag:building
+        tag:canlose
+		cost:12500000000000000000000000 fame
+		on tick:yield (1000000000+(prestige*2)) fame
+		on tick:yield (1000000000+(prestige*2)) yrm1
+		req:200000000000000 fame:earned
 
 
 Upgrades
@@ -446,18 +477,7 @@ Upgrades
 		cost:2500 infamy
         passive:multiply fame yield of thumbButton by 50
         passive:multiply infamy yield of thumbButton by 50
-		req:1750 thumbButton:clicks
-
-	*boring3
-		name:It Really Is a Lot of Clicking.
-		desc:Everyone has to rush through everything now? Sheesh. Grants you a 5000% modifier to all button presses.
-		icon:icons[1,1]
-        tag:upgrade
-        tag:canlose
-		cost:2500 infamy
-        passive:multiply fame yield of thumbButton by 50
-        passive:multiply infamy yield of thumbButton by 50
-		req:2750 thumbButton:clicks
+		req:2000 thumbButton:clicks
 
 	*fanup1
 		name:Blown Away
@@ -536,6 +556,46 @@ Upgrades
 		req:3600 thumbButton:clicks
         req:100 puppyTime
 
+	*towelsup1
+		name:Signed and a Bit Blood Splattered Towel
+		desc:Uh, not sure why this is a good thing but okay. Increases your Fame generation from your Walleye Towels by 1000%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:200000 infamy
+        passive:multiply fame yield of towels by 10
+		req:200 towels
+
+	*towelsup2
+		name:Goldplated Towel
+		desc:Another collectors edition towel, this one's been gold plated. Increases your Fame generation from your Walleye Towels by 1000%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:2000000 infamy
+        passive:multiply fame yield of towels by 10
+		req:500 towels
+
+	*towelsup3
+		name:Diamond(what)plated Towel
+		desc:Another collectors edition towel, this one's been diamond plated, how is that even a thing? Increases your Fame generation from your Walleye Towels by 1000%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:25000000 infamy
+        passive:multiply fame yield of towels by 10
+		req:800 towels
+
+	*starchup1
+		name:Doritos!
+		desc:Dude, sweet. Excellent choice. Increases your Fame generation from your Bag O Snacks by 2000%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:500000 infamy
+        passive:multiply fame yield of starchSnacks by 20
+		req:300 starchSnacks
+
 	*wasps
 		name:WASPS
 		desc:Flail around hilariously. Increases your Fame from your buildings by 250%.
@@ -556,13 +616,23 @@ Upgrades
         passive:multiply fame yield of :Buildings by 5
 		req:2000 thumbButton:clicks
 
+	*wasps3
+		name:THE WASPS ARE LEGION
+		desc:Bro, you better run. Increases your Fame from your buildings by 250%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:100000 infamy
+        passive:multiply fame yield of :Buildings by 2.5
+		req:10000 thumbButton:clicks
+
 	*john1
 		name:Imply that John is old.
 		desc:Gee, thanks Darryl. Grants you a single attaboy, and grants you +1 Infamy per button press that triggers Infamy (1/100).
 		icon:icons[1,1]
         tag:upgrade
 		cost:5 infamy
-		passive:increase infamy yield of thumbButton by 10
+		passive:increase infamy yield of thumbButton by 1
         passive:grant 1 attaboy
 		req:500 thumbButton:clicks
         req:fame>2000000
@@ -573,7 +643,7 @@ Upgrades
 		icon:icons[1,1]
         tag:upgrade
 		cost:5000 infamy
-		passive:increase infamy yield of thumbButton by 100
+		passive:increase infamy yield of thumbButton by 10
         passive:grant 1 attaboy
 		req:2000 thumbButton:clicks
         req:fame>10000000
@@ -604,8 +674,8 @@ Upgrades
 		icon:icons[1,1]
         tag:upgrade
 		cost:1 attaboy
-        passive:multiply fame yield of deskFan by 10000
-        passive:multiply dfm1 yield of deskFan by 10000
+        passive:multiply fame yield of deskFan by 100
+        passive:multiply dfm1 yield of deskFan by 100
 		req:prestigetier2
 
 	*prestige2b
@@ -614,39 +684,14 @@ Upgrades
 		icon:icons[1,1]
         tag:upgrade
 		cost:1 attaboy
-        passive:multiply fame yield of mandms by 8000
-        passive:multiply dfm1 yield of mmm1 by 8000
+        passive:multiply fame yield of mandms by 100
+        passive:multiply dfm1 yield of mmm1 by 100
 		req:prestigetier2
 
-	*prestige2c
-		name:Good Job!
-		desc:Lookit you go. This upgrade massively speeds up Puppies.
-		icon:icons[1,1]
-        tag:upgrade
-		cost:1 attaboy
-        passive:multiply fame yield of puppyTime by 9000
-        passive:multiply dfm1 yield of ptm1 by 9000
-		req:prestigetier2
 
-	*prestige2d
-		name:Good Job!
-		desc:Lookit you go. This upgrade massively speeds up Towels.
-		icon:icons[1,1]
-        tag:upgrade
-		cost:1 attaboy
-        passive:multiply fame yield of towels by 7000
-        passive:multiply dfm1 yield of twm1 by 7000
-		req:prestigetier2
 
-	*prestige2e
-		name:Good Job!
-		desc:Lookit you go. This upgrade massively speeds up Cubicle Raid.
-		icon:icons[1,1]
-        tag:upgrade
-		cost:1 attaboy
-        passive:multiply fame yield of towels by 6000
-        passive:multiply crm1 yield of twm1 by 6000
-		req:prestigetier2
+
+
 
 // Prestige
 
@@ -762,5 +807,3 @@ Achievements
         on earn:toast Shouldn't have done that, too much infamy. Try Again.
         icon:icons[1,1]
 		tag:prestige
-
-
