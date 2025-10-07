@@ -688,6 +688,26 @@ Upgrades
         passive:multiply dfm1 yield of mmm1 by 100
 		req:prestigetier2
 
+	*prestige2c
+		name:Good Job!
+		desc:Lookit you go. This upgrade massively speeds up Cubicle Raid.
+		icon:icons[1,1]
+        tag:upgrade
+		cost:1 attaboy
+        passive:multiply fame yield of cubicleRaid by 100
+        passive:multiply dfm1 yield of crm1 by 100
+		req:prestigetier2
+
+	*prestige2d
+		name:Good Job!
+		desc:Lookit you go. This upgrade massively speeds up Bag O Snacks.
+		icon:icons[1,1]
+        tag:upgrade
+		cost:1 attaboy
+        passive:multiply fame yield of starchSnacks by 100
+        passive:multiply dfm1 yield of ssm1 by 100
+		req:prestigetier2
+
 
 
 
