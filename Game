@@ -666,7 +666,7 @@ Upgrades
         tag:upgrade
 		cost:5 infamy
 		passive:increase infamy yield of thumbButton by 1
-        on earn:grant 1 attaboy
+        passive:grant 1 attaboy
 		req:500 thumbButton:clicks
         req:fame>2000000
 
@@ -677,7 +677,7 @@ Upgrades
         tag:upgrade
 		cost:5000 infamy
 		passive:increase infamy yield of thumbButton by 10
-        on earn:grant 1 attaboy
+        passive:grant 1 attaboy
 		req:2000 thumbButton:clicks
         req:fame>10000000
         req:monthlyIPMeet>=1
@@ -690,6 +690,7 @@ Upgrades
 		cost:1 attaboy
         passive:multiply fame yield of thumbButton by 20
         passive:multiply infamy yield of thumbButton by 20
+        passive:lose 1 attaboys
 		req:prestigetier1
 
 	*prestige1b
@@ -699,6 +700,7 @@ Upgrades
         tag:upgrade
 		cost:1 attaboy
         passive:multiply fame yield of :Buildings by 20
+        passive:lose 1 attaboys
 		req:prestigetier1
 
 	*prestige2a
@@ -709,6 +711,7 @@ Upgrades
 		cost:1 attaboy
         passive:multiply fame yield of deskFan by 100
         passive:multiply dfm1 yield of deskFan by 100
+        passive:lose 1 attaboys
 		req:prestigetier2
 
 	*prestige2b
@@ -719,6 +722,7 @@ Upgrades
 		cost:1 attaboy
         passive:multiply fame yield of mandms by 100
         passive:multiply dfm1 yield of mmm1 by 100
+        passive:lose 1 attaboys
 		req:prestigetier2
 
 	*prestige2c
@@ -729,6 +733,7 @@ Upgrades
 		cost:1 attaboy
         passive:multiply fame yield of cubicleRaid by 100
         passive:multiply dfm1 yield of crm1 by 100
+        passive:lose 1 attaboys
 		req:prestigetier2
 
 	*prestige2d
@@ -739,6 +744,7 @@ Upgrades
 		cost:1 attaboy
         passive:multiply fame yield of starchSnacks by 100
         passive:multiply dfm1 yield of ssm1 by 100
+        passive:lose 1 attaboys
 		req:prestigetier2
 
 
@@ -755,6 +761,7 @@ Upgrades
 		cost:2 attaboys
 		on earn:lose tag:canlose
         on earn:yield 1 prestige
+        passive:lose 2 attaboys
 		req:2 attaboy:earned
 
 	*prestigetier2
@@ -764,6 +771,7 @@ Upgrades
 		cost:4 attaboys
 		on earn:lose tag:canlose
         on earn:yield 1 prestige
+        passive:lose 4 attaboys
 		req:6 attaboy:earned
 
 
@@ -775,7 +783,7 @@ Achievements
 		name:Beginning Embiggener
 		desc:You clicked <b>3500</b> times. That's sure something.
 		req:3500 thumbButton clicks
-        on earn:grant 1 attaboy
+        passive:grant 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
@@ -783,7 +791,7 @@ Achievements
 		name:Amateur Embiggener
 		desc:You clicked <b>5000</b> times. That's sure something.
 		req:5000 thumbButton clicks
-        on earn:grant 1 attaboy
+        passive:grant 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
@@ -791,7 +799,7 @@ Achievements
 		name:Professional Embiggener
 		desc:You clicked <b>10000</b> times. That's sure something.
 		req:10000 thumbButton clicks
-        on earn:grant 1 attaboy
+        passive:grant 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
@@ -799,7 +807,7 @@ Achievements
 		name:Five Second Rule
 		desc:What, and just throw them away?! Earned by having 75 M&Ms.
 		req:75 mandms
-        on earn:grant 1 attaboy
+        passive:grant 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
@@ -807,7 +815,7 @@ Achievements
 		name:Now That's A Pile Of Puppies
 		desc:So much hair. Earned by having 350 "Get Yourself a Puppy" buildings.
 		req:350 puppyTime
-        on earn:grant 1 attaboy
+        passive:grant 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
@@ -815,7 +823,7 @@ Achievements
 		name:Where Did You Get All of This Desk Space?
 		desc:Why do you have so many fans? Earned by having 150 "Desk Fan" buildings.
 		req:150 deskFan
-        on earn:grant 1 attaboy
+        passive:grant 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
@@ -823,7 +831,7 @@ Achievements
 		name:Learn Some Restraint
 		desc:Are you being serious right now? Earned by having 350 "Desk Fan" buildings.
 		req:350 deskFan
-        on earn:grant 1 attaboy
+        passive:grant 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
@@ -831,7 +839,7 @@ Achievements
 		name:You Literally Have a Box of Them At Home
 		desc:I don't get the appeal. Earned by having 125 "Another Walleye Towel!" buildings.
 		req:125 towels
-        on earn:grant 1 attaboy
+        passive:grant 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
@@ -839,7 +847,7 @@ Achievements
 		name:More Than One Box, Actually
 		desc:Soon you'll need to add a new room, just to house all the dang towels. Earned by having 250 "Another Walleye Towel!" buildings.
 		req:250 towels
-        on earn:grant 1 attaboy
+        passive:grant 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
@@ -847,7 +855,7 @@ Achievements
 		name:Now That's What I Call Podracing
 		desc:Dang, that was actually pretty quick. Earned by buying the "Another Lot of Clicking" upgrade within 90 seconds of starting the game.
 		req:lotsofpractice2 and time<90
-        on earn:yield 1 attaboy
+        passive:yield 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
