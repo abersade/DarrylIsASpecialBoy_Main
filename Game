@@ -63,7 +63,6 @@ Resources
 		icon:
 		tag:prestige
 		class:noBackground
-        hidden when 0
         show earned
 
 	*time
@@ -783,7 +782,7 @@ Achievements
 		name:Beginning Embiggener
 		desc:You clicked <b>3500</b> times. That's sure something.
 		req:3500 thumbButton clicks
-        passive:grant 1 attaboy
+        passive:yield 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
@@ -791,7 +790,7 @@ Achievements
 		name:Amateur Embiggener
 		desc:You clicked <b>5000</b> times. That's sure something.
 		req:5000 thumbButton clicks
-        passive:grant 1 attaboy
+        passive:yield 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
@@ -799,7 +798,7 @@ Achievements
 		name:Professional Embiggener
 		desc:You clicked <b>10000</b> times. That's sure something.
 		req:10000 thumbButton clicks
-        passive:grant 1 attaboy
+        passive:yield 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
@@ -807,7 +806,7 @@ Achievements
 		name:Five Second Rule
 		desc:What, and just throw them away?! Earned by having 75 M&Ms.
 		req:75 mandms
-        passive:grant 1 attaboy
+        passive:yield 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
@@ -815,7 +814,7 @@ Achievements
 		name:Now That's A Pile Of Puppies
 		desc:So much hair. Earned by having 350 "Get Yourself a Puppy" buildings.
 		req:350 puppyTime
-        passive:grant 1 attaboy
+        passive:yield 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
@@ -823,7 +822,7 @@ Achievements
 		name:Where Did You Get All of This Desk Space?
 		desc:Why do you have so many fans? Earned by having 150 "Desk Fan" buildings.
 		req:150 deskFan
-        passive:grant 1 attaboy
+        passive:yield 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
@@ -831,7 +830,7 @@ Achievements
 		name:Learn Some Restraint
 		desc:Are you being serious right now? Earned by having 350 "Desk Fan" buildings.
 		req:350 deskFan
-        passive:grant 1 attaboy
+        passive:yield 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
@@ -839,7 +838,7 @@ Achievements
 		name:You Literally Have a Box of Them At Home
 		desc:I don't get the appeal. Earned by having 125 "Another Walleye Towel!" buildings.
 		req:125 towels
-        passive:grant 1 attaboy
+        passive:yield 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
@@ -847,7 +846,7 @@ Achievements
 		name:More Than One Box, Actually
 		desc:Soon you'll need to add a new room, just to house all the dang towels. Earned by having 250 "Another Walleye Towel!" buildings.
 		req:250 towels
-        passive:grant 1 attaboy
+        passive:yield 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
