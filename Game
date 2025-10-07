@@ -666,7 +666,7 @@ Upgrades
         tag:upgrade
 		cost:5 infamy
 		passive:increase infamy yield of thumbButton by 1
-        passive:grant 1 attaboy
+        on earn:grant 1 attaboy
 		req:500 thumbButton:clicks
         req:fame>2000000
 
@@ -677,7 +677,7 @@ Upgrades
         tag:upgrade
 		cost:5000 infamy
 		passive:increase infamy yield of thumbButton by 10
-        passive:grant 1 attaboy
+        on earn:grant 1 attaboy
 		req:2000 thumbButton:clicks
         req:fame>10000000
         req:monthlyIPMeet>=1
