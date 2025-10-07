@@ -501,6 +501,28 @@ Upgrades
         passive:multiply yield of :Buildings by 1.5
 		req:75 deskFan
 
+	*fanup3
+		name:5v Hurricane
+		desc:How are you even plugging these fans in at this point? Increases cost of Desk Fan by 200% and fame yield of all buildings by 500%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:1500000 infamy
+        passive:multiply cost of deskFan by 2
+        passive:multiply yield of :Buildings by 5
+		req:175 deskFan
+
+	*fanup4
+		name:A Dervish of Desk Fans
+		desc:This doesn't even make sense anymore. Increases cost of Desk Fan by 1000% and fame yield of Desk Fans by 500000%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:7500000 infamy
+        passive:multiply cost of deskFan by 10
+        passive:multiply yield of deskFan by 5000
+		req:225 deskFan
+
 	*mandmsup1
 		name:Never Ending Supply
 		desc:People are willing to overlook quite a bit when candy is available. Increases cost of M&M's by 100%, increases M&M's fame generation by 150%, and decreases Infamy gained per button click by 20%.
@@ -524,6 +546,17 @@ Upgrades
         passive:multiply yield of mandms by 2.5
         passive:multiply infamy yield of :Buildings by 2
 		req:100 mandms
+
+	*mandmsup3
+		name:Good Guy Darryl
+		desc:Throwing some Reese's Pieces in there... boss move. Increases cost of M&M's by 1000%, increases M&M's fame generation by 15000%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:2000000 infamy
+        passive:multiply cost of mandms by 10
+        passive:multiply yield of mandms by 150
+		req:200 mandms
 
 	*puppyup1
 		name:Brag About Your Puppy
