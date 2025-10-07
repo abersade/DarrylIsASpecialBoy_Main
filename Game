@@ -854,7 +854,7 @@ Achievements
 		name:Now That's What I Call Podracing
 		desc:Dang, that was actually pretty quick. Earned by buying the "Another Lot of Clicking" upgrade within 90 seconds of starting the game.
 		req:lotsofpractice2 and time<90
-        passive:yield 1 attaboy
+        passive:gain 1 attaboy
         icon:icons[1,1]
 		tag:prestige
 
