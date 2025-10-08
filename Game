@@ -577,7 +577,7 @@ Upgrades
         tag:canlose
 		cost:25 infamy
         passive:multiply cost of puppyTime by 5
-		req:600 thumbButton:clicks
+		req:1200 thumbButton:clicks
 
 	*puppyup2
 		name:Show Everyone Pictures of Your Puppy
@@ -587,7 +587,7 @@ Upgrades
         tag:canlose
 		cost:250 infamy
         passive:multiply cost of puppyTime by 5
-		req:1600 thumbButton:clicks
+		req:2600 thumbButton:clicks
 
 	*puppyup3
 		name:There Ought to be a Limit
