@@ -680,7 +680,7 @@ Upgrades
 		cost:50 infamy
 		passive:increase infamy yield of thumbButton by 5
 		req:500 thumbButton:clicks
-        req:fame>5000000
+        req:5000000 fame:earned
 
 	*john2
 		name:You Ate John's Donut.
@@ -691,7 +691,7 @@ Upgrades
 		cost:50000 infamy
 		passive:increase infamy yield of thumbButton by +10
 		req:2000 thumbButton:clicks
-        req:fame>20000000
+        req:20000000 fame:earned
         req:monthlyIPMeet>=1
 
 	*prestige1a
