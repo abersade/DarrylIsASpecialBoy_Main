@@ -49,7 +49,7 @@ Resources
 
 	*infamy
 		name:Infamy
-		desc:Yikes dude. Don't accumulate too much infamy, doing so has... consequences.
+		desc:Yikes dude. Don't accumulate too much infamy, doing so has... consequences. Keep this number below 1,000,000 (multiplied by your SPECIAL score x 100) or the game will abruptly reset. 
 		icon:
         tag:resource
         tag:canlose  
@@ -862,7 +862,7 @@ Achievements
   	*whoops
 		name:Shouldn't Have Done That
 		desc: Can't Say I Didn't Warn You.
-		req:infamy>(100000*(1+(prestige*100)))
+		req:infamy>(1000000*(1+(prestige*100)))
 		on earn:lose tag:canlose
         on earn:lose whoops
         on earn:toast Shouldn't have done that, too much infamy. Try Again.
