@@ -139,7 +139,6 @@ Resources
     *crtm2
         tag:resource
         tag:canlose
-        tag:resg
 		class:noBackground
         always hidden
 
