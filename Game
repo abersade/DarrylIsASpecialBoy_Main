@@ -24,9 +24,9 @@ Buttons
 		desc:Click this button to embiggen your numbers!
 		on click:anim icon wobble
 		on click:
-			if (chance (99%)) yield (1*(prestige*2)) fame
-            if (chance (5%)) yield (1*(prestige*2)) infamy
-            if (chance (1%)) yield (5*(prestige*2)) infamy
+			if (chance (99%)) yield (1+(1*(prestige*2))) fame
+            if (chance (5%)) yield (1+(1*(prestige*2))) infamy
+            if (chance (1%)) yield (5+(1*(prestige*2))) infamy
 		end	 
 		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1522386/yeah.png?1759185006
 		no text
@@ -186,7 +186,7 @@ Shinies
 *yourespecial
   name:So Special
   on click:
-     yield (random(100,10000)) fame
+     yield (random(100,10000)*(1+(prestige*2))) fame
      toast So Special, you gained some fame!
    end
   movement:anywhere fade randomAngle bounce moveRandom
@@ -197,7 +197,7 @@ Shinies
 *extraspecial
   name:So VERY Special
   on click:
-     yield (random(10,1000)) infamy
+     yield (random(10,1000)*(1+(prestige*2))) infamy
      toast Not Special Enough! You gained some Infamy, yay!
    end
   movement:anywhere fade randomAngle bounce moveRandom
@@ -244,8 +244,8 @@ Buildings
 		tag:building
         tag:canlose
 		cost:15 fame
-		on tick:yield (1*(prestige*2)) fame
-		on tick:yield (1*(prestige*2)) dfm1
+		on tick:yield (1*(1+(prestige*2))) fame
+		on tick:yield (1*(1+(prestige*2))) dfm1
 		unlocked
 
 	*mandms
@@ -255,8 +255,8 @@ Buildings
         tag:building
         tag:canlose
 		cost:100 fame
-		on tick:yield (5*(prestige*2)) fame
-		on tick:yield (5*(prestige*2)) mmm1
+		on tick:yield (5*(1+(prestige*2))) fame
+		on tick:yield (5*(1+(prestige*2))) mmm1
 		req:100 fame:earned
 
 	*puppyTime
@@ -267,8 +267,8 @@ Buildings
         tag:canlose
 		cost:(2*(prestige*2)) infamy
         cost increase:101%
-		on tick:yield (1*(prestige*2)) fame
-		on tick:yield (1*(prestige*2)) ptm1
+		on tick:yield (1*(1+(prestige*2))) fame
+		on tick:yield (1*(1+(prestige*2))) ptm1
 		req:200 fame:earned
 
 	*towels
@@ -278,8 +278,8 @@ Buildings
         tag:building
         tag:canlose
 		cost:250 fame
-		on tick:yield (10*(prestige*2)) fame
-		on tick:yield (10*(prestige*2)) twm1
+		on tick:yield (10*(1+(prestige*2))) fame
+		on tick:yield (10*(1+(prestige*2))) twm1
 		req:600 fame:earned
 
 	*cubicleRaid
@@ -289,8 +289,8 @@ Buildings
         tag:building
         tag:canlose
 		cost:3000 fame
-		on tick:yield (20*(prestige*2)) fame
-		on tick:yield (20*(prestige*2)) crm1
+		on tick:yield (20*(1+(prestige*2))) fame
+		on tick:yield (20*(1+(prestige*2))) crm1
 		req:1500 fame:earned
 
 	*starchSnacks
@@ -300,8 +300,8 @@ Buildings
         tag:building
         tag:canlose
 		cost:20000 fame
-		on tick:yield (50*(prestige*2)) fame
-		on tick:yield (50*(prestige*2)) ssm1
+		on tick:yield (50*(1+(prestige*2))) fame
+		on tick:yield (50*(1+(prestige*2))) ssm1
 		req:12000 fame:earned
 
 	*casinoTime
@@ -311,10 +311,10 @@ Buildings
         tag:building
         tag:canlose
 		cost:300000 fame
-		on tick:yield (200*(prestige*2)) fame
-		on tick:yield (200*(prestige*2)) ctm1
-		on tick:yield (1*(prestige*2)) infamy
-		on tick:yield (1*(prestige*2)) ctm2
+		on tick:yield (200*(1+(prestige*2))) fame
+		on tick:yield (200*(1+(prestige*2))) ctm1
+		on tick:yield (1*(1+(prestige*2))) infamy
+		on tick:yield (1*(1+(prestige*2))) ctm2
 		req:100000 fame:earned
 
 	*cruiseTime
@@ -324,10 +324,10 @@ Buildings
         tag:building
         tag:canlose
 		cost:6000000 fame
-		on tick:yield (1000*(prestige*2)) fame
-		on tick:yield (1000*(prestige*2)) crtm1
-		on tick:lose (1*(prestige*2)) infamy
-		on tick:yield (1*(prestige*2)) crtm2
+		on tick:yield (1000*(1+(prestige*2))) fame
+		on tick:yield (1000*(1+(prestige*2))) crtm1
+		on tick:lose (1*(1+(prestige*2))) infamy
+		on tick:yield (1*(1+(prestige*2))) crtm2
 		req:2000000 fame:earned
 
 	*weeklySecMeet
@@ -337,8 +337,8 @@ Buildings
         tag:building
         tag:canlose
 		cost:20000000 fame
-		on tick:yield (100*(prestige*2)) fame
-		on tick:yield (100*(prestige*2)) smm1
+		on tick:yield (100*(1+(prestige*2))) fame
+		on tick:yield (100*(1+(prestige*2))) smm1
         passive:multiply yield of weeklySecMeet by 1.1
 		req:7000000 fame:earned
 
@@ -349,8 +349,8 @@ Buildings
         tag:building
         tag:canlose
 		cost:75000000 fame
-		on tick:yield (2000*(prestige*2)) fame
-		on tick:yield (2000*(prestige*2)) llm1
+		on tick:yield (2000*(1+(prestige*2))) fame
+		on tick:yield (2000*(1+(prestige*2))) llm1
         passive:multiply yield of :Buildings by 1.05
 		req:15000000 fame:earned
 
@@ -361,8 +361,8 @@ Buildings
         tag:building
         tag:canlose
 		cost:125000000 fame
-		on tick:yield (7500*(prestige*2)) fame
-		on tick:yield (7500*(prestige*2)) ipm1
+		on tick:yield (7500*(1+(prestige*2))) fame
+		on tick:yield (7500*(1+(prestige*2))) ipm1
         passive:multiply yield of monthlyIPMeet by 1.1
 		req:100000000 fame:earned
 
@@ -373,8 +373,8 @@ Buildings
         tag:building
         tag:canlose
 		cost:1250000000 fame
-		on tick:yield (15000*(prestige*2)) fame
-		on tick:yield (15000*(prestige*2)) bsm1
+		on tick:yield (15000*(1+(prestige*2))) fame
+		on tick:yield (15000*(1+(prestige*2))) bsm1
 		req:2000000000 fame:earned
 
 	*selfReview
@@ -384,8 +384,8 @@ Buildings
         tag:building
         tag:canlose
 		cost:1250000000000000000000 fame
-		on tick:yield (100000*(prestige*2)) fame
-		on tick:yield (100000*(prestige*2)) srm1
+		on tick:yield (100000*(1+(prestige*2))) fame
+		on tick:yield (100000*(1+(prestige*2))) srm1
 		req:2000000000000 fame:earned
 
 	*yearlyReview
@@ -395,8 +395,8 @@ Buildings
         tag:building
         tag:canlose
 		cost:12500000000000000000000000 fame
-		on tick:yield (1000000*(prestige*2)) fame
-		on tick:yield (1000000*(prestige*2)) yrm1
+		on tick:yield (1000000*(1+(prestige*2))) fame
+		on tick:yield (1000000*(1+(prestige*2))) yrm1
 		req:20000000000000000 fame:earned
 
 
