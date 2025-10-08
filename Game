@@ -707,23 +707,23 @@ Upgrades
 
 	*john1
 		name:Imply that John is old.
-		desc:Gee, thanks Darryl. Grants you +5 Infamy per button press that triggers Infamy (6%).
+		desc:Gee, thanks Darryl. Grants you +2 Infamy per button press that triggers Infamy (6%).
 		icon:icons[1,1]
         tag:upgrade
         tag:canlose
 		cost:50 infamy
-		passive:increase infamy yield of thumbButton by 5
+		passive:increase infamy yield of thumbButton by 2
 		req:500 thumbButton:clicks
         req:5000000 fame:earned
 
 	*john2
 		name:You Ate John's Donut.
-		desc:Gee, thanks Darryl. Grants you +20 Infamy per button press that triggers Infamy (6%).
+		desc:Gee, thanks Darryl. Grants you +5 Infamy per button press that triggers Infamy (6%).
 		icon:icons[1,1]
         tag:upgrade
         tag:canlose
 		cost:50000 infamy
-		passive:increase infamy yield of thumbButton by +20
+		passive:increase infamy yield of thumbButton by 5
 		req:2000 thumbButton:clicks
         req:20000000 fame:earned
         req:monthlyIPMeet>=1
