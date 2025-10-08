@@ -570,6 +570,17 @@ Upgrades
         passive:multiply yield of mandms by 150
 		req:200 mandms
 
+	*mandmsup4
+		name:Peanut M&M's
+		desc:S-Tier Candy. Increases cost of M&M's by 1000%, increases M&M's fame generation by 10000%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:9000000 infamy
+        passive:multiply cost of mandms by 10
+        passive:multiply yield of mandms by 100
+		req:300 mandms
+
 	*puppyup1
 		name:Brag About Your Puppy
 		desc:Tell your coworkers all about your new dog. Increases Infamy cost of Get Yourself a Puppy by 500%.
@@ -601,6 +612,16 @@ Upgrades
 		req:3600 thumbButton:clicks
         req:100 puppyTime
 
+	*cubeRaid1
+		name:Free Coasters?
+		desc:Hmm. They're nice coasters. Increases your Fame generation from Cubicle Raid by 15000%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:3000000 infamy
+        passive:multiply fame yield of cubicleRaid by 150
+		req:225 cubicleRaid
+
 	*towelsup1
 		name:Signed and a Bit Blood Splattered Towel
 		desc:Uh, not sure why this is a good thing but okay. Increases your Fame generation from your Walleye Towels by 1000%.
@@ -619,7 +640,7 @@ Upgrades
         tag:canlose
 		cost:2000000 infamy
         passive:multiply fame yield of towels by 10
-		req:500 towels
+		req:300 towels
 
 	*towelsup3
 		name:Diamond(what)plated Towel
@@ -629,7 +650,7 @@ Upgrades
         tag:canlose
 		cost:25000000 infamy
         passive:multiply fame yield of towels by 10
-		req:800 towels
+		req:400 towels
 
 	*starchup1
 		name:Doritos!
@@ -637,7 +658,7 @@ Upgrades
 		icon:icons[1,1]
         tag:upgrade
         tag:canlose
-		cost:500000 infamy
+		cost:5000000 infamy
         passive:multiply fame yield of starchSnacks by 20
 		req:300 starchSnacks
 
@@ -670,6 +691,17 @@ Upgrades
 		cost:100000 infamy
         passive:multiply fame yield of :Buildings by 2.5
 		req:10000 thumbButton:clicks
+
+	*larryloreup1
+		name:Larry told you the origin of the GANDALF server
+		desc:"Do not quote the deep lore to me Darryl, for I was there when it was written". Increases your Larry Lore overall bonus by 200%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:20000000000 fame
+		cost:20000000 infamy
+        passive:multiply yield of :Buildings by (1.05*larryLore)
+		req:250 larryLore
 
 	*john1
 		name:Imply that John is old.
