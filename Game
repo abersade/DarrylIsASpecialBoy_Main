@@ -760,7 +760,7 @@ Upgrades
 		cost:2 attaboys
 		on earn:lose tag:canlose
         on earn:yield 1 prestige
-        passive:lose 2 attaboys
+        on earn:lose 2 attaboys
 		req:2 attaboy:earned
 
 	*prestigetier2
