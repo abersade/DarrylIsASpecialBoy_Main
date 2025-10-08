@@ -44,6 +44,7 @@ Resources
 		icon:
         tag:resource
         tag:canlose
+        tag:resg
 		class:noBackground
 		show earned
 
@@ -52,20 +53,11 @@ Resources
 		desc:Yikes dude. Don't accumulate too much infamy, doing so has... consequences. Keep this number below 1,000,000 (multiplied by 1 + your SPECIAL score x 100) or the game will abruptly reset. 
 		icon:
         tag:resource
+        tag:resb
         tag:canlose  
 		class:noBackground
         hidden when 0
 		show earned
-		
-/*
-	*attaboy|attaboys
-		name:Attaboy
-		desc:Proof that Darryl is the extra most special boy to ever walk the earth. Spend these on Prestige.
-		icon:
-		tag:prestige
-		class:noBackground
-        show earned
-*/
 
 	*time
 		name:Time
@@ -85,12 +77,14 @@ Resources
     *dfm1
         tag:resource
         tag:canlose
+        tag:resg
 		class:noBackground
         always hidden
 
     *mmm1
         tag:resource
         tag:canlose
+        tag:resg
 		class:noBackground
         always hidden
 
@@ -103,78 +97,91 @@ Resources
     *twm1
         tag:resource
         tag:canlose
+        tag:resg
 		class:noBackground
         always hidden
 
     *crm1
         tag:resource
         tag:canlose
+        tag:resg
 		class:noBackground
         always hidden
 
     *ssm1
         tag:resource
         tag:canlose
+        tag:resg
 		class:noBackground
         always hidden
 
     *ctm1
         tag:resource
         tag:canlose
+        tag:resg
 		class:noBackground
         always hidden
 
     *ctm2
         tag:resource
         tag:canlose
+        tag:resg
 		class:noBackground
         always hidden
 
     *crtm1
         tag:resource
         tag:canlose
+        tag:resg
 		class:noBackground
         always hidden
 
     *crtm2
         tag:resource
         tag:canlose
+        tag:resg
 		class:noBackground
         always hidden
 
     *smm1
         tag:resource
         tag:canlose
+        tag:resg
 		class:noBackground
         always hidden
 
     *llm1
         tag:resource
         tag:canlose
+        tag:resg
 		class:noBackground
         always hidden
 
     *ipm1
         tag:resource
         tag:canlose
+        tag:resg
 		class:noBackground
         always hidden
 
     *bsm1
         tag:resource
         tag:canlose
+        tag:resg
 		class:noBackground
         always hidden
 
     *srm1
         tag:resource
         tag:canlose
+        tag:resg
 		class:noBackground
         always hidden
 
     *yrm1
         tag:resource
         tag:canlose
+        tag:resg
 		class:noBackground
         always hidden
 
@@ -351,7 +358,7 @@ Buildings
 		cost:75000000 fame
 		on tick:yield (2000*(1+(prestige*2))) fame
 		on tick:yield (2000*(1+(prestige*2))) llm1
-        passive:multiply :Resources yield of :Buildings by 1.05
+        passive:multiply tag:resg yield of :Buildings by 1.05
 		req:15000000 fame:earned
 
 	*monthlyIPMeet
@@ -475,7 +482,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:50 infamy
-        passive:multiply :Resources yield of thumbButton by 2
+        passive:multiply tag:resg yield of thumbButton by 2
 		req:700 thumbButton:clicks
 
 	*boring2
@@ -485,7 +492,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:2500 infamy
-        passive:multiply :Resources yield of thumbButton by 50
+        passive:multiply tag:resg yield of thumbButton by 50
 		req:2000 thumbButton:clicks
 
 	*fanup1
@@ -496,7 +503,7 @@ Upgrades
         tag:canlose
 		cost:150 infamy
         passive:multiply cost of deskFan by 10
-        passive:multiply :Resources yield of :Buildings by 1.5
+        passive:multiply tag:resg yield of :Buildings by 1.5
 		req:50 deskFan
 
 	*fanup2
@@ -507,7 +514,7 @@ Upgrades
         tag:canlose
 		cost:1500 infamy
         passive:multiply cost of deskFan by 10
-        passive:multiply :Resources yield of :Buildings by 1.5
+        passive:multiply tag:resg yield of :Buildings by 1.5
 		req:75 deskFan
 
 	*fanup3
@@ -518,7 +525,7 @@ Upgrades
         tag:canlose
 		cost:1500000 infamy
         passive:multiply cost of deskFan by 2
-        passive:multiply :Resources yield of :Buildings by 5
+        passive:multiply tag:resg yield of :Buildings by 5
 		req:175 deskFan
 
 	*fanup4
@@ -529,31 +536,30 @@ Upgrades
         tag:canlose
 		cost:7500000 infamy
         passive:multiply cost of deskFan by 10
-        passive:multiply :Resources yield of deskFan by 5000
+        passive:multiply tag:resg yield of deskFan by 5000
 		req:225 deskFan
 
 	*mandmsup1
 		name:Never Ending Supply
-		desc:People are willing to overlook quite a bit when candy is available. Increases cost of M&M's by 100%, increases M&M's fame generation by 150%, and decreases Infamy gained per button click by 20%.
+		desc:People are willing to overlook quite a bit when candy is available. Increases cost of M&M's by 100% and increases M&M's fame generation by 150%.
 		icon:icons[1,1]
         tag:upgrade
         tag:canlose
 		cost:200 infamy
         passive:multiply cost of mandms by 2
-        passive:multiply :Resources yield of mandms by 1.5
-        passive:multiply infamy yield of thumbButton by 0.8
+        passive:multiply tag:resg yield of mandms by 1.5
 		req:50 mandms
 
 	*mandmsup2
 		name:Devious Nature
-		desc:Mix some Skittles in there just to throw us off. Increases cost of M&M's by 1000%, increases M&M's fame generation by 250%, and increases Infamy gained per building by 100%.
+		desc:Mix some Skittles in there just to throw us off. Increases cost of M&M's by 1000%, increases M&M's fame generation by 250%, and increases Infamy gained per building by 500%.
 		icon:icons[1,1]
         tag:upgrade
         tag:canlose
 		cost:4000 infamy
         passive:multiply cost of mandms by 10
         passive:multiply :Resources yield of mandms by 2.5
-        passive:multiply infamy yield of :Buildings by 2
+        passive:multiply infamy yield of casinoTime by 5
 		req:100 mandms
 
 	*mandmsup3
@@ -564,7 +570,7 @@ Upgrades
         tag:canlose
 		cost:2000000 infamy
         passive:multiply cost of mandms by 10
-        passive:multiply :Resources yield of mandms by 150
+        passive:multiply tag:resg yield of mandms by 150
 		req:200 mandms
 
 	*mandmsup4
@@ -575,7 +581,7 @@ Upgrades
         tag:canlose
 		cost:9000000 infamy
         passive:multiply cost of mandms by 10
-        passive:multiply :Resources yield of mandms by 100
+        passive:multiply tag:resg yield of mandms by 100
 		req:300 mandms
 
 	*puppyup1
@@ -616,7 +622,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:3000000 infamy
-        passive:multiply :Resources yield of cubicleRaid by 150
+        passive:multiply tag:resg yield of cubicleRaid by 150
 		req:225 cubicleRaid
 
 	*towelsup1
@@ -626,7 +632,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:200000 infamy
-        passive:multiply :Resources yield of towels by 10
+        passive:multiply tag:resg yield of towels by 10
 		req:200 towels
 
 	*towelsup2
@@ -636,7 +642,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:2000000 infamy
-        passive:multiply :Resources yield of towels by 10
+        passive:multiply tag:resg yield of towels by 10
 		req:300 towels
 
 	*towelsup3
@@ -646,7 +652,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:25000000 infamy
-        passive:multiply :Resources yield of towels by 10
+        passive:multiply tag:resg yield of towels by 10
 		req:400 towels
 
 	*starchup1
@@ -656,7 +662,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:5000000 infamy
-        passive:multiply :Resources yield of starchSnacks by 20
+        passive:multiply tag:resg yield of starchSnacks by 20
 		req:300 starchSnacks
 
 	*wasps
@@ -666,7 +672,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:200 infamy
-        passive:multiply :Resources yield of :Buildings by 2.5
+        passive:multiply tag:resg yield of :Buildings by 2.5
 		req:550 thumbButton:clicks
 
 	*wasps2
@@ -676,7 +682,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:1000 infamy
-        passive:multiply :Resources yield of :Buildings by 5
+        passive:multiply tag:resg yield of :Buildings by 5
 		req:2000 thumbButton:clicks
 
 	*wasps3
@@ -686,7 +692,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:100000 infamy
-        passive:multiply :Resources yield of :Buildings by 2.5
+        passive:multiply tag:resg yield of :Buildings by 2.5
 		req:10000 thumbButton:clicks
 
 	*larryloreup1
@@ -697,35 +703,35 @@ Upgrades
         tag:canlose
 		cost:20000000000 fame
 		cost:20000000 infamy
-        passive:multiply :Resources yield of :Buildings by (1.05*larryLore)
+        passive:multiply tag:resg yield of :Buildings by (1.05*larryLore)
 		req:250 larryLore
 
 	*john1
 		name:Imply that John is old.
-		desc:Gee, thanks Darryl. Grants you +2 Infamy per button press that triggers Infamy (6%).
+		desc:Gee, thanks Darryl. Grants you +5 Infamy per button press that triggers Infamy (6%).
 		icon:icons[1,1]
         tag:upgrade
         tag:canlose
 		cost:50 infamy
-		passive:increase infamy yield of thumbButton by 2
+		passive:increase infamy yield of thumbButton by 5
 		req:500 thumbButton:clicks
         req:5000000 fame:earned
 
 	*john2
 		name:You Ate John's Donut.
-		desc:Gee, thanks Darryl. Grants you +2 Infamy per button press that triggers Infamy (6%).
+		desc:Gee, thanks Darryl. Grants you +50 Infamy per button press that triggers Infamy (6%).
 		icon:icons[1,1]
         tag:upgrade
         tag:canlose
 		cost:50000 infamy
-		passive:increase infamy yield of thumbButton by +2
+		passive:increase infamy yield of thumbButton by +50
 		req:2000 thumbButton:clicks
         req:20000000 fame:earned
         req:monthlyIPMeet>=1
 
 	*prestige1a
 		name:Harold's Shiny!
-		desc:Not actually, so just pretend or something. This upgrade massively speeds up clicking.
+		desc:Not actually, so just pretend or something. This upgrade massively speeds up clicking, including infamy.
 		icon:icons[1,1]
         tag:upgrade
         tag:canlose
@@ -751,7 +757,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:10000000000000 fame
-        passive:multiply :Resources yield of deskFan by 100
+        passive:multiply tag:resg yield of deskFan by 100
 		req:prestigetier2
 
 	*prestige2b
@@ -761,7 +767,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:10000000000000 fame
-        passive:multiply :Resources yield of mandms by 100
+        passive:multiply tag:resg yield of mandms by 100
 		req:prestigetier2
 
 	*prestige2c
@@ -771,7 +777,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:15000000000000 fame
-        passive:multiply :Resources yield of cubicleRaid by 100
+        passive:multiply tag:resg yield of cubicleRaid by 100
 		req:prestigetier2
 
 	*prestige2d
@@ -781,7 +787,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:15000000000000 fame
-        passive:multiply :Resources yield of towels by 100
+        passive:multiply tag:resg yield of towels by 100
 		req:prestigetier2
 
 	*prestige2e
@@ -791,7 +797,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:25000000000000 fame
-        passive:multiply :Resources yield of starchSnacks by 100
+        passive:multiply tag:resg yield of starchSnacks by 100
 		req:prestigetier2
 
 	*prestige2f
@@ -801,7 +807,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:50000000000000 fame
-        passive:multiply :Resources yield of cruiseTime by 100
+        passive:multiply tag:resg yield of cruiseTime by 100
 		req:prestigetier2
 
 
