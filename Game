@@ -351,7 +351,7 @@ Buildings
 		cost:75000000 fame
 		on tick:yield (2000*(1+(prestige*2))) fame
 		on tick:yield (2000*(1+(prestige*2))) llm1
-        passive:multiply :Resource yield of :Buildings by 1.05
+        passive:multiply :Resources yield of :Buildings by 1.05
 		req:15000000 fame:earned
 
 	*monthlyIPMeet
