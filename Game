@@ -349,7 +349,7 @@ Buildings
 		req:7000000 fame:earned
 
 	*larryLore
-		name:You Learned Something Cool From Larry
+		name:Learn Something Cool From Larry
 		desc:You never know when Larry will chime in with some fact that is equal parts relevant and borderline unbelievable. Grants you 2000 base Fame per second and just makes you better overall. Currently earning you [llm1:ps] fame per second.
 		icon:icons[0,0]
         tag:building
