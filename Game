@@ -49,7 +49,7 @@ Resources
 
 	*infamy
 		name:Infamy
-		desc:Yikes dude. Don't accumulate too much infamy, doing so has... consequences. Keep this number below 1,000,000 (multiplied by your SPECIAL score x 100) or the game will abruptly reset. 
+		desc:Yikes dude. Don't accumulate too much infamy, doing so has... consequences. Keep this number below 1,000,000 (multiplied by 1 + your SPECIAL score x 100) or the game will abruptly reset. 
 		icon:
         tag:resource
         tag:canlose  
