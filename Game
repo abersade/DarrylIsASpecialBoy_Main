@@ -337,7 +337,7 @@ Buildings
 		req:2000000 fame:earned
 
 	*weeklySecMeet
-		name:Attend Another Weekly Security Meeting
+		name:Attend Another Security Meeting
 		desc:These are so boring. Grants you 100 base Fame per second, at first. Attending more security meetings to increase. Currently earning you [smm1:ps] fame per second.
 		icon:icons[0,0]
         tag:building
@@ -361,7 +361,7 @@ Buildings
 		req:15000000 fame:earned
 
 	*monthlyIPMeet
-		name:Attend Another Monthly IP Meeting
+		name:Attend Another IP Meeting
 		desc:Meetings SUUUUCK. Grants you 7500 base Fame per second. Maybe you'll find some donuts in there. Currently earning you [ipm1:ps] fame per second.
 		icon:icons[0,0]
         tag:building
