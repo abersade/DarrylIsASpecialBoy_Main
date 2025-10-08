@@ -27,7 +27,8 @@ Buttons
 			if (chance (99%)) yield (1+(1*(prestige*2))) fame
             if (chance (5%)) yield (1+(1*(prestige*2))) infamy
             if (chance (1%)) yield (5+(1*(prestige*2))) infamy
-		end	 
+		end
+        show clicks
 		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1522386/yeah.png?1759185006
 		no text
 		class:bigButton hasFlares
