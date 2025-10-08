@@ -699,7 +699,7 @@ Upgrades
         tag:canlose
 		cost:20000000000 fame
 		cost:20000000 infamy
-        passive:multiply yield of :Buildings by (1.05*larryLore)
+        passive:multiply :Resources yield of :Buildings by (1.05*larryLore)
 		req:250 larryLore
 
 	*john1
