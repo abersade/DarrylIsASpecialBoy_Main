@@ -667,7 +667,7 @@ Upgrades
 		passive:increase infamy yield of thumbButton by 1
         passive:grant 1 attaboy
 		req:500 thumbButton:clicks
-        req:fame>2000000
+        req:fame>5000000
 
 	*john2
 		name:You Ate John's Donut.
@@ -678,7 +678,7 @@ Upgrades
 		passive:increase infamy yield of thumbButton by 10
         passive:grant 1 attaboy
 		req:2000 thumbButton:clicks
-        req:fame>10000000
+        req:fame>20000000
         req:monthlyIPMeet>=1
 
 	*prestige1a
@@ -689,7 +689,6 @@ Upgrades
 		cost:1 attaboy
         passive:multiply fame yield of thumbButton by 20
         passive:multiply infamy yield of thumbButton by 20
-        passive:lose 1 attaboys
 		req:prestigetier1
 
 	*prestige1b
@@ -699,7 +698,6 @@ Upgrades
         tag:upgrade
 		cost:1 attaboy
         passive:multiply fame yield of :Buildings by 20
-        passive:lose 1 attaboys
 		req:prestigetier1
 
 	*prestige2a
@@ -710,7 +708,6 @@ Upgrades
 		cost:1 attaboy
         passive:multiply fame yield of deskFan by 100
         passive:multiply dfm1 yield of deskFan by 100
-        passive:lose 1 attaboys
 		req:prestigetier2
 
 	*prestige2b
@@ -721,7 +718,6 @@ Upgrades
 		cost:1 attaboy
         passive:multiply fame yield of mandms by 100
         passive:multiply dfm1 yield of mmm1 by 100
-        passive:lose 1 attaboys
 		req:prestigetier2
 
 	*prestige2c
@@ -732,7 +728,6 @@ Upgrades
 		cost:1 attaboy
         passive:multiply fame yield of cubicleRaid by 100
         passive:multiply dfm1 yield of crm1 by 100
-        passive:lose 1 attaboys
 		req:prestigetier2
 
 	*prestige2d
@@ -743,7 +738,6 @@ Upgrades
 		cost:1 attaboy
         passive:multiply fame yield of starchSnacks by 100
         passive:multiply dfm1 yield of ssm1 by 100
-        passive:lose 1 attaboys
 		req:prestigetier2
 
 
@@ -760,17 +754,15 @@ Upgrades
 		cost:2 attaboys
 		on earn:lose tag:canlose
         on earn:yield 1 prestige
-        on earn:lose 2 attaboys
 		req:2 attaboy:earned
 
 	*prestigetier2
 		name:Prestige - Upgraded Cubicle
-		desc:Your tiny cubicle has been embiggened. Do you think that you can take it to even greater heights?
+		desc:Your tiny cubicle has been embiggened again. Do you think that you can take it to even greater heights?
 		icon:icons[1,1]
 		cost:4 attaboys
 		on earn:lose tag:canlose
         on earn:yield 1 prestige
-        passive:lose 4 attaboys
 		req:6 attaboy:earned
 
 
