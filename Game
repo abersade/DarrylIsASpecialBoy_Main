@@ -24,9 +24,9 @@ Buttons
 		desc:Click this button to embiggen your numbers!
 		on click:anim icon wobble
 		on click:
-			if (chance (99%)) yield 1 fame
-            if (chance (5%)) yield 1 infamy
-            if (chance (1%)) yield 5 infamy
+			if (chance (99%)) yield (1*(prestige*2)) fame
+            if (chance (5%)) yield (1*(prestige*2)) infamy
+            if (chance (1%)) yield (5*(prestige*2)) infamy
 		end	 
 		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1522386/yeah.png?1759185006
 		no text
@@ -457,6 +457,16 @@ Upgrades
 		cost:500000 fame
 		passive:increase fame yield of thumbButton by 90
 		req:2500 thumbButton:clicks
+
+	*lotsofpractice4
+		name:I've Got Blisters on Me Fingers!
+		desc:So much clicking, just to shave off what, one second? Let's make that better. <//><b>Effect:</b><.> Embiggening your numbers via clicking is significantly faster. Grants you +90000 Fame per button press.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:50000000 fame
+		passive:increase fame yield of thumbButton by 90000
+		req:4500 thumbButton:clicks
 
 	*boring1
 		name:This is too slow for me.
