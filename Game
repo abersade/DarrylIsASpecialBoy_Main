@@ -265,7 +265,7 @@ Buildings
 		icon:icons[0,0]
         tag:building
         tag:canlose
-		cost:(2*(prestige*2)) infamy
+		cost:(2+(2*(prestige*2)) infamy
         cost increase:101%
 		on tick:yield (1*(1+(prestige*2))) fame
 		on tick:yield (1*(1+(prestige*2))) ptm1
