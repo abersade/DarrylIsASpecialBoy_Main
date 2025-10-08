@@ -380,24 +380,24 @@ Buildings
 
 	*selfReview
 		name:Submit Your Yearly Self Review
-		desc:These things are the freaking worst. Hate hate HATE them. Grants you 100,000 base Fame per second. Currently earning you [srm1:ps] fame per second.
+		desc:These things are the freaking worst. Hate hate HATE them. Grants you 1,000,000 base Fame per second. Currently earning you [srm1:ps] fame per second.
 		icon:icons[0,0]
         tag:building
         tag:canlose
 		cost:1250000000000000000000 fame
-		on tick:yield (100000*(1+(prestige*2))) fame
-		on tick:yield (100000*(1+(prestige*2))) srm1
+		on tick:yield (1000000*(1+(prestige*2))) fame
+		on tick:yield (1000000*(1+(prestige*2))) srm1
 		req:2000000000000 fame:earned
 
 	*yearlyReview
 		name:It's your Annual Review!!!
-		desc:Time to find out how much you're worth. Grants you 1,000,000 base Fame per second. Currently earning you [yrm1:ps] fame per second.
+		desc:Time to find out how much you're worth. Grants you 100,000,000 base Fame per second. Currently earning you [yrm1:ps] fame per second.
 		icon:icons[0,0]
         tag:building
         tag:canlose
 		cost:12500000000000000000000000 fame
-		on tick:yield (1000000*(1+(prestige*2))) fame
-		on tick:yield (1000000*(1+(prestige*2))) yrm1
+		on tick:yield (100000000*(1+(prestige*2))) fame
+		on tick:yield (100000000*(1+(prestige*2))) yrm1
 		req:20000000000000000 fame:earned
 
 
