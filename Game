@@ -435,7 +435,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:50 fame
-		passive:increase fame yield of thumbButton by 2
+		passive:increase :Resources yield of thumbButton by 2
 		req:40 thumbButton:clicks
 
 	*lotsofpractice2
@@ -445,7 +445,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:500 fame
-		passive:increase fame yield of thumbButton by 7
+		passive:increase :Resources yield of thumbButton by 7
 		req:400 thumbButton:clicks
 
 	*lotsofpractice3
@@ -455,7 +455,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:500000 fame
-		passive:increase fame yield of thumbButton by 90
+		passive:increase :Resources yield of thumbButton by 90
 		req:2500 thumbButton:clicks
 
 	*lotsofpractice4
@@ -465,7 +465,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:50000000 fame
-		passive:increase fame yield of thumbButton by 90000
+		passive:increase :Resources yield of thumbButton by 90000
 		req:4500 thumbButton:clicks
 
 	*boring1
@@ -475,8 +475,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:50 infamy
-        passive:multiply fame yield of thumbButton by 2
-        passive:multiply infamy yield of thumbButton by 2
+        passive:multiply :Resources yield of thumbButton by 2
 		req:700 thumbButton:clicks
 
 	*boring2
@@ -486,8 +485,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:2500 infamy
-        passive:multiply fame yield of thumbButton by 50
-        passive:multiply infamy yield of thumbButton by 50
+        passive:multiply :Resources yield of thumbButton by 50
 		req:2000 thumbButton:clicks
 
 	*fanup1
@@ -498,7 +496,7 @@ Upgrades
         tag:canlose
 		cost:150 infamy
         passive:multiply cost of deskFan by 10
-        passive:multiply yield of :Buildings by 1.5
+        passive:multiply :Resources yield of :Buildings by 1.5
 		req:50 deskFan
 
 	*fanup2
@@ -509,7 +507,7 @@ Upgrades
         tag:canlose
 		cost:1500 infamy
         passive:multiply cost of deskFan by 10
-        passive:multiply yield of :Buildings by 1.5
+        passive:multiply :Resources yield of :Buildings by 1.5
 		req:75 deskFan
 
 	*fanup3
@@ -520,7 +518,7 @@ Upgrades
         tag:canlose
 		cost:1500000 infamy
         passive:multiply cost of deskFan by 2
-        passive:multiply yield of :Buildings by 5
+        passive:multiply :Resources yield of :Buildings by 5
 		req:175 deskFan
 
 	*fanup4
@@ -531,7 +529,7 @@ Upgrades
         tag:canlose
 		cost:7500000 infamy
         passive:multiply cost of deskFan by 10
-        passive:multiply yield of deskFan by 5000
+        passive:multiply :Resources yield of deskFan by 5000
 		req:225 deskFan
 
 	*mandmsup1
@@ -542,7 +540,7 @@ Upgrades
         tag:canlose
 		cost:200 infamy
         passive:multiply cost of mandms by 2
-        passive:multiply yield of mandms by 1.5
+        passive:multiply :Resources yield of mandms by 1.5
         passive:multiply infamy yield of thumbButton by 0.8
 		req:50 mandms
 
@@ -554,7 +552,7 @@ Upgrades
         tag:canlose
 		cost:4000 infamy
         passive:multiply cost of mandms by 10
-        passive:multiply yield of mandms by 2.5
+        passive:multiply :Resources yield of mandms by 2.5
         passive:multiply infamy yield of :Buildings by 2
 		req:100 mandms
 
@@ -566,7 +564,7 @@ Upgrades
         tag:canlose
 		cost:2000000 infamy
         passive:multiply cost of mandms by 10
-        passive:multiply yield of mandms by 150
+        passive:multiply :Resources yield of mandms by 150
 		req:200 mandms
 
 	*mandmsup4
@@ -577,7 +575,7 @@ Upgrades
         tag:canlose
 		cost:9000000 infamy
         passive:multiply cost of mandms by 10
-        passive:multiply yield of mandms by 100
+        passive:multiply :Resources yield of mandms by 100
 		req:300 mandms
 
 	*puppyup1
@@ -618,7 +616,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:3000000 infamy
-        passive:multiply fame yield of cubicleRaid by 150
+        passive:multiply :Resources yield of cubicleRaid by 150
 		req:225 cubicleRaid
 
 	*towelsup1
@@ -628,7 +626,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:200000 infamy
-        passive:multiply fame yield of towels by 10
+        passive:multiply :Resources yield of towels by 10
 		req:200 towels
 
 	*towelsup2
@@ -638,7 +636,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:2000000 infamy
-        passive:multiply fame yield of towels by 10
+        passive:multiply :Resources yield of towels by 10
 		req:300 towels
 
 	*towelsup3
@@ -648,7 +646,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:25000000 infamy
-        passive:multiply fame yield of towels by 10
+        passive:multiply :Resources yield of towels by 10
 		req:400 towels
 
 	*starchup1
@@ -658,7 +656,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:5000000 infamy
-        passive:multiply fame yield of starchSnacks by 20
+        passive:multiply :Resources yield of starchSnacks by 20
 		req:300 starchSnacks
 
 	*wasps
@@ -668,7 +666,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:200 infamy
-        passive:multiply fame yield of :Buildings by 2.5
+        passive:multiply :Resources yield of :Buildings by 2.5
 		req:550 thumbButton:clicks
 
 	*wasps2
@@ -678,7 +676,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:1000 infamy
-        passive:multiply fame yield of :Buildings by 5
+        passive:multiply :Resources yield of :Buildings by 5
 		req:2000 thumbButton:clicks
 
 	*wasps3
@@ -688,7 +686,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:100000 infamy
-        passive:multiply fame yield of :Buildings by 2.5
+        passive:multiply :Resources yield of :Buildings by 2.5
 		req:10000 thumbButton:clicks
 
 	*larryloreup1
@@ -743,7 +741,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:100000000000 fame
-        passive:multiply fame yield of :Buildings by 20
+        passive:multiply :Resources yield of :Buildings by 20
 		req:prestigetier1
 
 	*prestige2a
@@ -753,8 +751,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:10000000000000 fame
-        passive:multiply fame yield of deskFan by 100
-        passive:multiply dfm1 yield of deskFan by 100
+        passive:multiply :Resources yield of deskFan by 100
 		req:prestigetier2
 
 	*prestige2b
@@ -764,8 +761,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:10000000000000 fame
-        passive:multiply fame yield of mandms by 100
-        passive:multiply mmm1 yield of mandms by 100
+        passive:multiply :Resources yield of mandms by 100
 		req:prestigetier2
 
 	*prestige2c
@@ -775,8 +771,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:15000000000000 fame
-        passive:multiply fame yield of cubicleRaid by 100
-        passive:multiply crm1 yield of cubicleRaid by 100
+        passive:multiply :Resources yield of cubicleRaid by 100
 		req:prestigetier2
 
 	*prestige2d
@@ -786,8 +781,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:15000000000000 fame
-        passive:multiply fame yield of towels by 100
-        passive:multiply twm1 yield of towels by 100
+        passive:multiply :Resources yield of towels by 100
 		req:prestigetier2
 
 	*prestige2e
@@ -797,8 +791,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:25000000000000 fame
-        passive:multiply fame yield of starchSnacks by 100
-        passive:multiply ssm1 yield of starchSnacks by 100
+        passive:multiply :Resources yield of starchSnacks by 100
 		req:prestigetier2
 
 	*prestige2f
@@ -808,8 +801,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:50000000000000 fame
-        passive:multiply fame yield of cruiseTime by 100
-        passive:multiply crtm1 yield of cruiseTime by 100
+        passive:multiply :Resources yield of cruiseTime by 100
 		req:prestigetier2
 
 
