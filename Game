@@ -766,7 +766,7 @@ Upgrades
         tag:canlose
 		cost:10000000000000 fame
         passive:multiply fame yield of mandms by 100
-        passive:multiply dfm1 yield of mmm1 by 100
+        passive:multiply mmm1 yield of mandms by 100
 		req:prestigetier2
 
 	*prestige2c
@@ -777,23 +777,43 @@ Upgrades
         tag:canlose
 		cost:15000000000000 fame
         passive:multiply fame yield of cubicleRaid by 100
-        passive:multiply dfm1 yield of crm1 by 100
+        passive:multiply crm1 yield of cubicleRaid by 100
 		req:prestigetier2
 
 	*prestige2d
+		name:A Not So Terrible Towel
+		desc:You love these damn things, don't you. This upgrade massively speeds up Another Walleye Towel by (100x).
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:15000000000000 fame
+        passive:multiply fame yield of towels by 100
+        passive:multiply twm1 yield of towels by 100
+		req:prestigetier2
+
+	*prestige2e
 		name:-beetus!
 		desc:Lookit you go, straight to the hospital for clogged arteries. This upgrade massively speeds up Bag O Snacks (100x).
 		icon:icons[1,1]
         tag:upgrade
         tag:canlose
-		cost:15000000000000 fame
+		cost:25000000000000 fame
         passive:multiply fame yield of starchSnacks by 100
-        passive:multiply dfm1 yield of ssm1 by 100
+        passive:multiply ssm1 yield of starchSnacks by 100
 		req:prestigetier2
 
-
-
-
+	*prestige2f
+		name:Honeymoon
+		desc:Hopefully the leaves look as nice as the pictures. This upgrade massively improves Cruising USA (100x).
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:50000000000000 fame
+        passive:multiply fame yield of cruiseTime by 100
+        passive:multiply crtm1 yield of cruiseTime by 100
+        passive:multiply infamy yield of starchSnacks by 100
+        passive:multiply crtm2 yield of starchSnacks by 100
+		req:prestigetier2
 
 
 // Prestige
