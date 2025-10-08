@@ -811,8 +811,6 @@ Upgrades
 		cost:50000000000000 fame
         passive:multiply fame yield of cruiseTime by 100
         passive:multiply crtm1 yield of cruiseTime by 100
-        passive:lower infamy yield of starchSnacks by 99
-        passive:multiply crtm2 yield of starchSnacks by 100
 		req:prestigetier2
 
 
