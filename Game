@@ -246,7 +246,7 @@ Buildings
 	*deskFan
 		name:Desk Fan
 		desc:It's your biggest (and only) fan! For now, anyways. Grants you 1 base Fame per second, currently earning you [dfm1:ps] fame per second.
-		icon:icons[1,0]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524063/fan1.jpg?1760018853
 		tag:building
         tag:canlose
 		cost:15 fame
@@ -497,7 +497,7 @@ Upgrades
 	*fanup1
 		name:Blown Away
 		desc:Turns out those fans can really push some air. Increases cost of Desk Fan by 1000% and fame yield of all buildings by 150%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524064/fan2.jpg?1760018858
         tag:upgrade
         tag:canlose
 		cost:150 infamy
@@ -508,7 +508,7 @@ Upgrades
 	*fanup2
 		name:Desknado
 		desc:This is just too many fans. Increases cost of Desk Fan by 1000% and fame yield of all buildings by 150%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524064/fan2.jpg?1760018858
         tag:upgrade
         tag:canlose
 		cost:1500 infamy
@@ -519,7 +519,7 @@ Upgrades
 	*fanup3
 		name:5v Hurricane
 		desc:How are you even plugging these fans in at this point? Increases cost of Desk Fan by 200% and fame yield of all buildings by 500%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524064/fan2.jpg?1760018858
         tag:upgrade
         tag:canlose
 		cost:1500000 infamy
@@ -530,7 +530,7 @@ Upgrades
 	*fanup4
 		name:A Dervish of Desk Fans
 		desc:This doesn't even make sense anymore. Increases cost of Desk Fan by 1000% and fame yield of Desk Fans by 500000%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524064/fan2.jpg?1760018858
         tag:upgrade
         tag:canlose
 		cost:7500000 infamy
@@ -752,7 +752,7 @@ Upgrades
 	*prestige2a
 		name:Death by Many Fan Blades
 		desc:This upgrade massively speeds up Desk Fans, increasing their Fame yield (100x).
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524065/fan3.jpg?1760018993
         tag:upgrade
         tag:canlose
 		cost:10000000000000 fame
@@ -874,14 +874,14 @@ Achievements
 		name:Where Did You Get All of This Desk Space?
 		desc:Why do you have so many fans? Earned by having 150 "Desk Fan" buildings.
 		req:150 deskFan
-        icon:icons[1,1]
+        icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524067/fan4.jpg?1760019163
 		tag:prestige
 
 	*onlyFans2
 		name:Learn Some Restraint
 		desc:Are you being serious right now? Earned by having 350 "Desk Fan" buildings.
 		req:350 deskFan
-        icon:icons[1,1]
+        icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524067/fan4.jpg?1760019163
 		tag:prestige
 
 	*towelsach1
