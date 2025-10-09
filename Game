@@ -708,7 +708,7 @@ Upgrades
 	*john1
 		name:Imply that John is old.
 		desc:Gee, thanks Darryl. Grants you +2 Infamy per button press that triggers Infamy (6%).
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524096/oldmanyellsatcloud.png?1760026261
         tag:upgrade
         tag:canlose
 		cost:50 infamy
@@ -719,7 +719,7 @@ Upgrades
 	*john2
 		name:You Ate John's Donut.
 		desc:Gee, thanks Darryl. Grants you +5 Infamy per button press that triggers Infamy (6%).
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524095/donut1.png?1760026193
         tag:upgrade
         tag:canlose
 		cost:50000 infamy
