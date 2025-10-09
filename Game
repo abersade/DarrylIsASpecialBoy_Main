@@ -437,7 +437,7 @@ Upgrades
 	*lotsofpractice1
 		name:That Sure Was A Lot Of Clicking
 		desc:You've been practicing, and can finally find those M&Ms that you left on the floor. <//><b>Effect:</b><.> Embiggening your numbers via clicking is a bit faster. Grants you +2 Fame per button press.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524062/yeah3.png?1760018608
         tag:upgrade
         tag:canlose
 		cost:50 fame
@@ -447,7 +447,7 @@ Upgrades
 	*lotsofpractice2
 		name:Another Lot Of Clicking
 		desc:Now you can catch the M&Ms BEFORE you drop them. <//><b>Effect:</b><.> Embiggening your numbers via clicking is a bit faster, again. Grants you +7 Fame per button press.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524062/yeah3.png?1760018608
         tag:upgrade
         tag:canlose
 		cost:500 fame
@@ -457,7 +457,7 @@ Upgrades
 	*lotsofpractice3
 		name:So Much Clicking
 		desc:Still bored I suppose. <//><b>Effect:</b><.> Embiggening your numbers via clicking is significantly faster. Grants you +90 Fame per button press.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524062/yeah3.png?1760018608
         tag:upgrade
         tag:canlose
 		cost:500000 fame
@@ -467,7 +467,7 @@ Upgrades
 	*lotsofpractice4
 		name:I've Got Blisters on Me Fingers!
 		desc:So much clicking, just to shave off what, one second? Let's make that better. <//><b>Effect:</b><.> Embiggening your numbers via clicking is significantly faster. Grants you +90000 Fame per button press.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524062/yeah3.png?1760018608
         tag:upgrade
         tag:canlose
 		cost:50000000 fame
@@ -477,7 +477,7 @@ Upgrades
 	*boring1
 		name:This is too slow for me.
 		desc:Having a short attention span has its drawbacks, but this isn't one of them. Grants you a 200% modifier to all button presses.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524062/yeah3.png?1760018608
         tag:upgrade
         tag:canlose
 		cost:50 infamy
@@ -487,7 +487,7 @@ Upgrades
 	*boring2
 		name:Josh also thinks it's boring.
 		desc:Well fine then, does this help? Grants you a 5000% modifier to all button presses.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524062/yeah3.png?1760018608
         tag:upgrade
         tag:canlose
 		cost:2500 infamy
