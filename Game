@@ -280,7 +280,7 @@ Buildings
 	*towels
 		name:Another Walleye Towel!
 		desc:How many of these freaking things do you own?! Grants you 10 base Fame per second, currently earning you [twm1:ps] fame per second.
-		icon:icons[0,0]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524093/towel.jpg?1760025576
         tag:building
         tag:canlose
 		cost:250 fame
@@ -627,7 +627,7 @@ Upgrades
 	*towelsup1
 		name:Signed and a Bit Blood Splattered Towel
 		desc:Uh, not sure why this is a good thing but okay. Increases your Fame generation from your Walleye Towels by 1000%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524092/towel2.jpg?1760025576
         tag:upgrade
         tag:canlose
 		cost:200000 infamy
@@ -637,7 +637,7 @@ Upgrades
 	*towelsup2
 		name:Goldplated Towel
 		desc:Another collectors edition towel, this one's been gold plated. Increases your Fame generation from your Walleye Towels by 1000%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524092/towel2.jpg?1760025576
         tag:upgrade
         tag:canlose
 		cost:2000000 infamy
@@ -647,7 +647,7 @@ Upgrades
 	*towelsup3
 		name:Diamond(what)plated Towel
 		desc:Another collectors edition towel, this one's been diamond plated, how is that even a thing? Increases your Fame generation from your Walleye Towels by 1000%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524092/towel2.jpg?1760025576
         tag:upgrade
         tag:canlose
 		cost:25000000 infamy
@@ -782,7 +782,7 @@ Upgrades
 	*prestige2d
 		name:A Not So Terrible Towel
 		desc:You love these damn things, don't you. This upgrade massively speeds up Another Walleye Towel by (100x).
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524091/towel3.jpg?1760025576
         tag:upgrade
         tag:canlose
 		cost:15000000000000 fame
@@ -888,14 +888,14 @@ Achievements
 		name:You Literally Have a Box of Them At Home
 		desc:I don't get the appeal. Earned by having 125 "Another Walleye Towel!" buildings.
 		req:125 towels
-        icon:icons[1,1]
+        icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524090/towel-a.jpg?1760025398
 		tag:prestige
 
 	*towelsach2
 		name:More Than One Box, Actually
 		desc:Soon you'll need to add a new room, just to house all the dang towels. Earned by having 250 "Another Walleye Towel!" buildings.
 		req:250 towels
-        icon:icons[1,1]
+        icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524090/towel-a.jpg?1760025398
 		tag:prestige
 
   	*speedround1
