@@ -268,7 +268,7 @@ Buildings
 	*puppyTime
 		name:Get Yourself a Puppy
 		desc:Who doesn't love puppies? They don't provide much fame, but buying them is a great way to use up some infamy. Grants you 1 base Fame per second, currently earning you [ptm1:ps] fame per second.
-		icon:icons[0,0]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524086/puppy1.jpg?1760024852
         tag:building
         tag:canlose
 		cost:5 infamy
@@ -586,7 +586,7 @@ Upgrades
 	*puppyup1
 		name:Brag About Your Puppy
 		desc:Tell your coworkers all about your new dog. Increases Infamy cost of Get Yourself a Puppy by 500%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524085/puppy2.jpg?1760024852
         tag:upgrade
         tag:canlose
 		cost:25 infamy
@@ -596,7 +596,7 @@ Upgrades
 	*puppyup2
 		name:Show Everyone Pictures of Your Puppy
 		desc:It's like telling everyone about your puppy, but with pictures! Increases Infamy cost of Get Yourself a Puppy by 500%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524085/puppy2.jpg?1760024852
         tag:upgrade
         tag:canlose
 		cost:250 infamy
@@ -606,7 +606,7 @@ Upgrades
 	*puppyup3
 		name:There Ought to be a Limit
 		desc:You've gathered so many puppies in one place that people are starting to become suspicious. Increases Infamy cost of Get Yourself a Puppy by 1000%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524085/puppy2.jpg?1760024852
         tag:upgrade
         tag:canlose
 		cost:250 infamy
@@ -867,7 +867,7 @@ Achievements
 		name:Now That's A Pile Of Puppies
 		desc:So much hair. Earned by having 350 "Get Yourself a Puppy" buildings.
 		req:350 puppyTime
-        icon:icons[1,1]
+        icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524084/puppy4.png?1760024852
 		tag:prestige
 
 	*onlyFans1
@@ -902,7 +902,7 @@ Achievements
 		name:Now That's What I Call Podracing
 		desc:Dang, that was actually pretty quick. Earned by buying the "Another Lot of Clicking" upgrade within 90 seconds of starting the game.
 		req:lotsofpractice2 and time<90
-        icon:icons[1,1]
+        icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524088/podracing1.png?1760025126
 		tag:prestige
 
   	*whoops
