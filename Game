@@ -667,7 +667,7 @@ Upgrades
 	*wasps
 		name:WASPS
 		desc:Flail around hilariously. Increases your Fame from your buildings by 250%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524061/wasp-insect-icon-vector.jpg?1760018348
         tag:upgrade
         tag:canlose
 		cost:200 infamy
@@ -677,7 +677,7 @@ Upgrades
 	*wasps2
 		name:WASPS AGAIN
 		desc:"Do I need to get the clipboard?" Increases your Fame from your buildings by 500%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524061/wasp-insect-icon-vector.jpg?1760018348
         tag:upgrade
         tag:canlose
 		cost:1000 infamy
@@ -687,7 +687,7 @@ Upgrades
 	*wasps3
 		name:THE WASPS ARE LEGION
 		desc:Bro, you better run. Increases your Fame from your buildings by 250%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524061/wasp-insect-icon-vector.jpg?1760018348
         tag:upgrade
         tag:canlose
 		cost:100000 infamy
