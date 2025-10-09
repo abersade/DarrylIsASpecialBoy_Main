@@ -190,7 +190,7 @@ Resources
 Shinies
 
 *yourespecial
-  name:So Special
+  name:
   on click:
      yield (random(100,10000)*(1+(prestige*2))) fame
      toast So Special, you gained some fame!
@@ -201,7 +201,7 @@ Shinies
   icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524090/towel-a.jpg?1760025398
 
 *extraspecial
-  name:So VERY Special
+  name:
   on click:
      yield (random(10,1000)*(1+(prestige*2))) infamy
      toast Not Special Enough! You gained some Infamy, yay!
