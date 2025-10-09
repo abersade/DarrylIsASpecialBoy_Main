@@ -257,7 +257,7 @@ Buildings
 	*mandms
 		name:M&M's!
 		desc:Your co-workers are ALWAYS willing to accept bribes. Grants you 5 base Fame per second, currently earning you [mmm1:ps] fame per second.
-		icon:icons[0,0]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524074/M1.png?1760021224
         tag:building
         tag:canlose
 		cost:100 fame
@@ -541,7 +541,7 @@ Upgrades
 	*mandmsup1
 		name:Never Ending Supply
 		desc:People are willing to overlook quite a bit when candy is available. Increases cost of M&M's by 100% and increases M&M's fame generation by 150%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524075/M2.png?1760021283
         tag:upgrade
         tag:canlose
 		cost:200 infamy
@@ -552,7 +552,7 @@ Upgrades
 	*mandmsup2
 		name:Devious Nature
 		desc:Mix some Skittles in there just to throw us off. Increases cost of M&M's by 1000%, increases M&M's fame generation by 250%, and increases Infamy gained per building by 500%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524075/M2.png?1760021283
         tag:upgrade
         tag:canlose
 		cost:4000 infamy
@@ -564,7 +564,7 @@ Upgrades
 	*mandmsup3
 		name:Good Guy Darryl
 		desc:Throwing some Reese's Pieces in there... boss move. Increases cost of M&M's by 1000%, increases M&M's fame generation by 15000%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524075/M2.png?1760021283
         tag:upgrade
         tag:canlose
 		cost:2000000 infamy
@@ -575,7 +575,7 @@ Upgrades
 	*mandmsup4
 		name:Peanut M&M's
 		desc:S-Tier Candy. Increases cost of M&M's by 1000%, increases M&M's fame generation by 10000%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524075/M2.png?1760021283
         tag:upgrade
         tag:canlose
 		cost:9000000 infamy
@@ -762,7 +762,7 @@ Upgrades
 	*prestige2b
 		name:Dia-
 		desc:So. Much. Candy. This upgrade massively speeds up M&Ms (100x).
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524076/M3.png?1760021363
         tag:upgrade
         tag:canlose
 		cost:10000000000000 fame
@@ -860,7 +860,7 @@ Achievements
 		name:Five Second Rule
 		desc:What, and just throw them away?! Earned by having 75 M&Ms.
 		req:75 mandms
-        icon:icons[1,1]
+        icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524078/M4.png?1760021463
 		tag:prestige
 
 	*puppies1
