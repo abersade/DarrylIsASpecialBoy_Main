@@ -4,8 +4,8 @@ Let's make a game!
 	by:Abersade
 	desc:Currently this is a test.
 	created:29/9/2025
-	updated:8/10/2025
-	version:2.0
+	updated:10/10/2025
+	version:2.1
 
 Settings
 	background:
@@ -813,8 +813,8 @@ Upgrades
 // Prestige
 
 	*prestigetier1
-		name:Prestige - Upgraded Cubicle
-		desc:Your tiny cubicle has been embiggened. Do you think that you can take it to even greater heights?
+		name:Prestige - Better Chair
+		desc:Your old chair has been replaced, whether you wanted it or not. Do you have what it takes to keep upgrading?
 		icon:icons[1,1]
 		cost:100000000000 fame
 		on earn:lose tag:canlose
@@ -829,6 +829,15 @@ Upgrades
 		on earn:lose tag:canlose
         on earn:yield 1 prestige
 		req:100000000000000 fame:earned
+
+	*prestigetier3
+		name:Prestige - Snack Drawers!
+		desc:You just got an extra filing cabinet, just for your snacks! Get organizing!
+		icon:icons[1,1]
+		cost:100000000000000000 fame
+		on earn:lose tag:canlose
+        on earn:yield 1 prestige
+		req:100000000000000000 fame:earned
 
 
 Achievements
