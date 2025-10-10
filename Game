@@ -825,19 +825,19 @@ Upgrades
 		name:Prestige - Upgraded Cubicle
 		desc:Your tiny cubicle has been embiggened again. Do you think that you can take it to even greater heights?
 		icon:icons[1,1]
-		cost:10000000000000 fame
+		cost:100000000000000 fame
 		on earn:lose tag:canlose
         on earn:yield 1 prestige
-		req:100000000000000 fame:earned
+		req:1000000000000000 fame:earned
 
 	*prestigetier3
 		name:Prestige - Snack Drawers!
 		desc:You just got an extra filing cabinet, just for your snacks! Get organizing!
 		icon:icons[1,1]
-		cost:100000000000000000 fame
+		cost:1000000000000000000000 fame
 		on earn:lose tag:canlose
         on earn:yield 1 prestige
-		req:100000000000000000 fame:earned
+		req:1000000000000000000000 fame:earned
 
 
 Achievements
