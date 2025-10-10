@@ -5,14 +5,13 @@ Let's make a game!
 	desc:Currently this is a test.
 	created:29/9/2025
 	updated:10/10/2025
-	version:2.1
+	version:2.12
 
 Settings
 	background:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524277/gettyimages-1404155718-640x640.jpg?1760130106
 	building cost increase:110%
 	building cost refund:10%
     spritesheet:icons, 48 by 48, https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/837844/building_6x6.jpg?1520844130
-    background:http://www.colorhexa.com/000000.png
     stylesheet:https://pastebin.com/raw/ahFnmcEU
 
 Layout
