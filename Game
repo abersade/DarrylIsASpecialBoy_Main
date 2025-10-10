@@ -818,6 +818,8 @@ Upgrades
 		icon:icons[1,1]
 		cost:100000000000 fame
 		on earn:lose tag:canlose
+        on earn:lose fame
+        on earn:lose infamy
         on earn:yield 1 prestige
 		req:1000000000000 fame:earned
 
@@ -827,6 +829,8 @@ Upgrades
 		icon:icons[1,1]
 		cost:1000000000000000 fame
 		on earn:lose tag:canlose
+        on earn:lose fame
+        on earn:lose infamy
         on earn:yield 1 prestige
 		req:1000000000000000 fame:earned
 
@@ -836,6 +840,8 @@ Upgrades
 		icon:icons[1,1]
 		cost:50000000000000000000000 fame
 		on earn:lose tag:canlose
+        on earn:lose fame
+        on earn:lose infamy
         on earn:yield 1 prestige
 		req:10000000000000000000000 fame:earned
 
