@@ -786,6 +786,28 @@ Upgrades
         passive:multiply tag:resg yield of cruiseTime by 100
 		req:prestigetier2
 
+	*prestige3a
+		name:Dropped on your head?! Really?
+		desc:WTF dude. This upgrade massively speeds up clicking, including infamy.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:100000000000000000000000 fame
+        passive:multiply fame yield of thumbButton by 50
+        passive:multiply infamy yield of thumbButton by 10
+		req:prestigetier3
+
+	*prestige3b
+		name:Winning Ain't Easy
+		desc:Go on, git back to the casino where you belong. This upgrade massively speeds up Time to Gamble, including infamy.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:100000000000000000000000 fame
+        passive:multiply tag:resg yield of casinoTime by 5000
+        passive:multiply infamy yield of casinoTime by 2
+		req:prestigetier3
+
 
 // Prestige
 
@@ -888,6 +910,13 @@ Achievements
 		desc:Soon you'll need to add a new room, just to house all the dang towels. Earned by having 250 "Another Walleye Towel!" buildings.
 		req:250 towels
         icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524090/towel-a.jpg?1760025398
+		tag:prestige
+
+	*casinoach1
+		name:Risky Business
+		desc:Riding the knife edge of thrills at the casino. Earned by having 400 "Time to Gamble" buildings.
+		req:400 casinoTime
+        icon:
 		tag:prestige
 
   	*speedround1
