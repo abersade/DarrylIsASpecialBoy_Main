@@ -274,6 +274,7 @@ Buildings
         cost increase:101%
 		on tick:yield (1*(1+(prestige*2))) fame
 		on tick:yield (1*(1+(prestige*2))) ptm1
+        on lose:toast You monster.
 		req:200 fame:earned
 
 	*towels
