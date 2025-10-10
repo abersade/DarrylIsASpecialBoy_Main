@@ -834,10 +834,10 @@ Upgrades
 		name:Prestige - Snack Drawers!
 		desc:You just got an extra filing cabinet, just for your snacks! Get organizing!
 		icon:icons[1,1]
-		cost:1000000000000000000000 fame
+		cost:1000000000000000000000000 fame
 		on earn:lose tag:canlose
         on earn:yield 1 prestige
-		req:1000000000000000000000 fame:earned
+		req:1000000000000000000000000 fame:earned
 
 
 Achievements
