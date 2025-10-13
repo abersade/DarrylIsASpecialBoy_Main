@@ -268,7 +268,7 @@ Buildings
 	*cubicleRaid
 		name:Cubicle Raid
 		desc:Look at you, scavenging equipment from a different cubicle. Grants you 20 base Fame per second, currently earning you [crm1:ps] fame per second.
-		icon:icons[0,0]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524756/jolly-roger-pirate-cubicle.jpg?1760368159
         tag:building
         tag:canlose
 		cost:3000 fame
@@ -279,7 +279,7 @@ Buildings
 	*starchSnacks
 		name:Bag O Snacks
 		desc:Pretzels and chips, but what's for lunch? Grants you 50 base Fame per second, currently earning you [ssm1:ps] fame per second.
-		icon:icons[0,0]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524755/pretzelbag.png?1760368006
         tag:building
         tag:canlose
 		cost:20000 fame
@@ -290,7 +290,7 @@ Buildings
 	*casinoTime
 		name:Time to Gamble
 		desc:Off to the casino again, let's see if you're a winner! Grants you 200 base Fame per second and 1 base infamy per second, currently earning you [ctm1:ps] fame per second and [ctm2:ps] infamy per second.
-		icon:icons[0,0]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524757/Slot-Machine-4-901x600-1.jpg?1760368261
         tag:building
         tag:canlose
 		cost:300000 fame
@@ -303,7 +303,7 @@ Buildings
 	*cruiseTime
 		name:Cruisin USA
 		desc:Vacation, honeymoon, or just because? Grants you 1000 base Fame per second and reduces your base infamy by 1 per second, currently earning you [crtm1:ps] fame per second and removing [crtm2:ps] infamy per second.
-		icon:icons[0,0]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524759/allure-of-the-seas-texas-cruise-1.jpg?1760368359
         tag:building
         tag:canlose
 		cost:6000000 fame
@@ -328,7 +328,7 @@ Buildings
 	*larryLore
 		name:Learn Something Cool From Larry
 		desc:You never know when Larry will chime in with some fact that is equal parts relevant and borderline unbelievable. Grants you 2000 base Fame per second and just makes you better overall. Currently earning you [llm1:ps] fame per second.
-		icon:icons[0,0]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524760/view.jpg?1760368538
         tag:building
         tag:canlose
 		cost:75000000 fame
