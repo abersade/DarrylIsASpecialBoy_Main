@@ -362,7 +362,7 @@ Buildings
 
 	*selfReview
 		name:Submit Your Yearly Self Review
-		desc:These things are the freaking worst. Hate hate HATE them. Grants you 1,000,000 base Fame per second. Currently earning you [srm1:ps] fame per second.
+		desc:These things are the freaking worst. Hate hate HATE them. Grants you 1,000,000,000 base Fame per second. Currently earning you [srm1:ps] fame per second.
 		icon:icons[0,0]
         tag:building
         tag:canlose
@@ -373,7 +373,7 @@ Buildings
 
 	*yearlyReview
 		name:It's your Annual Review!!!
-		desc:Time to find out how much you're worth. Grants you 100,000,000 base Fame per second. Currently earning you [yrm1:ps] fame per second.
+		desc:Time to find out how much you're worth. Grants you 100,000,000,000 base Fame per second. Currently earning you [yrm1:ps] fame per second.
 		icon:icons[0,0]
         tag:building
         tag:canlose
@@ -855,7 +855,7 @@ Upgrades
         tag:canlose
 		cost:100000000000000000000000 fame
         passive:multiply tag:resg yield of casinoTime by 5000
-        passive:multiply infamy yield of casinoTime by 2
+        passive:multiply infamy yield of casinoTime by 5
 		req:prestigetier3
 
 	*prestige3c
@@ -867,6 +867,7 @@ Upgrades
 		cost:100000000000000000000000 fame
         passive:multiply tag:resg yield of budgetSeason by 1000
 		req:prestigetier3
+
 
 
 // Prestige
