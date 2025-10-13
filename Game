@@ -864,7 +864,7 @@ Upgrades
 	*prestigetier1
 		name:Prestige - Better Chair
 		desc:Your old chair has been replaced, whether you wanted it or not. Do you have what it takes to keep upgrading? Taking this speeds up your future progress and unlocks more content, but wipes out your current progress.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524833/Chair.png?1760385733
 		cost:100000000000 fame
 		on earn:lose tag:canlose
         on earn:lose fame
@@ -875,7 +875,7 @@ Upgrades
 	*prestigetier2
 		name:Prestige - Upgraded Cubicle
 		desc:Your tiny cubicle has been embiggened again. Do you think that you can take it to even greater heights? Taking this speeds up your future progress and unlocks more content, but wipes out your current progress.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524835/cubicle.png?1760386230
 		cost:1000000000000000 fame
 		on earn:lose tag:canlose
         on earn:lose fame
@@ -886,7 +886,7 @@ Upgrades
 	*prestigetier3
 		name:Prestige - Snack Drawers!
 		desc:You just got an extra filing cabinet, just for your snacks! Get organizing! Taking this speeds up your future progress and unlocks more content, but wipes out your current progress.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524836/images.jpg?1760386230
 		cost:50000000000000000000000 fame
 		on earn:lose tag:canlose
         on earn:lose fame
