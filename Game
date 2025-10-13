@@ -749,7 +749,7 @@ Upgrades
 	*prestige2c
 		name:Master Scavenger
 		desc:Why is there a book of old keys? Who knows. This upgrade massively speeds up Cubicle Raid (100x).
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524754/endless-office-maze-stockcake.jpg?1760367808
         tag:upgrade
         tag:canlose
 		cost:15000000000000 fame
@@ -769,7 +769,7 @@ Upgrades
 	*prestige2e
 		name:-beetus!
 		desc:Lookit you go, straight to the hospital for clogged arteries. This upgrade massively speeds up Bag O Snacks (100x).
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524753/00brimley-superJumbo-v2.jpg?1760367732
         tag:upgrade
         tag:canlose
 		cost:25000000000000 fame
@@ -779,7 +779,7 @@ Upgrades
 	*prestige2f
 		name:Honeymoon
 		desc:Hopefully the leaves look as nice as the pictures. This upgrade massively improves Cruising USA (100x).
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524749/ShipsLanding_Prestige_Desktop.jpg?1760367564
         tag:upgrade
         tag:canlose
 		cost:50000000000000 fame
@@ -789,7 +789,7 @@ Upgrades
 	*prestige3a
 		name:Dropped on your head?! Really?
 		desc:WTF dude. This upgrade massively speeds up clicking, including infamy.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524747/p33125_i_h10_ae.jpg?1760367322
         tag:upgrade
         tag:canlose
 		cost:100000000000000000000000 fame
@@ -800,7 +800,7 @@ Upgrades
 	*prestige3b
 		name:Winning Ain't Easy
 		desc:Go on, git back to the casino where you belong. This upgrade massively speeds up Time to Gamble, including infamy.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524748/hollywoocasino.jpg?1760367454
         tag:upgrade
         tag:canlose
 		cost:100000000000000000000000 fame
