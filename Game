@@ -848,6 +848,16 @@ Upgrades
         passive:multiply infamy yield of casinoTime by 2
 		req:prestigetier3
 
+	*prestige3c
+		name:Non-Loaner Company Vehicle
+		desc:I almost wanted to put some ridiculous price here to indicate that this can't be bought. This upgrade massively speeds up Sumbit Your Budget Requests.
+		icon:
+        tag:upgrade
+        tag:canlose
+		cost:100000000000000000000000 fame
+        passive:multiply tag:resg yield of budgetSeason by 1000
+		req:prestigetier3
+
 
 // Prestige
 
@@ -907,7 +917,7 @@ Achievements
 		name:Professional Embiggener
 		desc:You clicked <b>10000</b> times. That's sure something.
 		req:10000 thumbButton clicks
-        icon:icons[1,1]
+        icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524827/inception.png?1760384661
 		tag:prestige
 
 	*mandmandms1
