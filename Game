@@ -851,7 +851,7 @@ Upgrades
 	*prestige3c
 		name:Non-Loaner Company Vehicle
 		desc:I almost wanted to put some ridiculous price here to indicate that this can't be bought. This upgrade massively speeds up Sumbit Your Budget Requests.
-		icon:
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524832/old-rusty-truck-stands-on-600nw-503320690.jpg?1760385301
         tag:upgrade
         tag:canlose
 		cost:100000000000000000000000 fame
