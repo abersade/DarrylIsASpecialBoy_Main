@@ -711,6 +711,16 @@ Upgrades
         passive:multiply tag:resg yield of :Buildings by 2.5
 		req:10000 thumbButton:clicks
 
+	*wasps4
+		name:WASP QUEEN?!
+		desc:Where are they all coming from? Increases your Fame from your buildings by 250%.
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524061/wasp-insect-icon-vector.jpg?1760018348
+        tag:upgrade
+        tag:canlose
+		cost:275000000 infamy
+        passive:multiply tag:resg yield of :Buildings by 2.5
+		req:20000 thumbButton:clicks
+
 	*larryloreup1
 		name:Larry told you the origin of the GANDALF server
 		desc:"Do not quote the deep lore to me Darryl, for I was there when it was written". Increases your Larry Lore overall bonus by 200%.
