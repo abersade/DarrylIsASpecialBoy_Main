@@ -594,12 +594,32 @@ Upgrades
 	*cubeRaid1
 		name:Free Coasters?
 		desc:Hmm. They're nice coasters. Increases your Fame generation from Cubicle Raid by 15000%.
-		icon:icons[1,1]
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524808/pirate-businessman-holding-hammer-isolated-260nw-746036017.jpg?1760378685
         tag:upgrade
         tag:canlose
 		cost:3000000 infamy
         passive:multiply tag:resg yield of cubicleRaid by 150
 		req:225 cubicleRaid
+
+	*cubeRaid2
+		name:An Old Christmas Card?
+		desc:Why wasn't this thrown out. Increases your Fame generation from Cubicle Raid by 15000%.
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524808/pirate-businessman-holding-hammer-isolated-260nw-746036017.jpg?1760378685
+        tag:upgrade
+        tag:canlose
+		cost:30000000 infamy
+        passive:multiply tag:resg yield of cubicleRaid by 150
+		req:350 cubicleRaid
+
+	*cubeRaid3
+		name:A Stack Of Old HDDs?
+		desc:You'd think we would keep better track of these things, but NOPE. Increases your Fame generation from Cubicle Raid by 10000%.
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524808/pirate-businessman-holding-hammer-isolated-260nw-746036017.jpg?1760378685
+        tag:upgrade
+        tag:canlose
+		cost:150000000 infamy
+        passive:multiply tag:resg yield of cubicleRaid by 150
+		req:475 cubicleRaid
 
 	*towelsup1
 		name:Signed and a Bit Blood Splattered Towel
@@ -631,6 +651,16 @@ Upgrades
         passive:multiply tag:resg yield of towels by 10
 		req:400 towels
 
+	*towelsup4
+		name:Custom Steelbook Towel
+		desc:Another collectors edition towel, this one's been manufactured specifically at your request, though why you would want such a thing is beyond me. Increases your Fame generation from your Walleye Towels by 500%.
+		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524092/towel2.jpg?1760025576
+        tag:upgrade
+        tag:canlose
+		cost:100000000 infamy
+        passive:multiply tag:resg yield of towels by 5
+		req:450 towels
+
 	*starchup1
 		name:Doritos!
 		desc:Dude, sweet. Excellent choice. Increases your Fame generation from your Bag O Snacks by 2000%.
@@ -640,6 +670,16 @@ Upgrades
 		cost:5000000 infamy
         passive:multiply tag:resg yield of starchSnacks by 20
 		req:300 starchSnacks
+
+	*starchup2
+		name:Pretzels!
+		desc:The "Bog Standard" desk snack. Increases your Fame generation from your Bag O Snacks by 2000%.
+		icon:icons[1,1]
+        tag:upgrade
+        tag:canlose
+		cost:50000000 infamy
+        passive:multiply tag:resg yield of starchSnacks by 20
+		req:400 starchSnacks
 
 	*wasps
 		name:WASPS
