@@ -367,8 +367,8 @@ Buildings
         tag:building
         tag:canlose
 		cost:1250000000000000000000 fame
-		on tick:yield (1000000*(1+(prestige*2))) fame
-		on tick:yield (1000000*(1+(prestige*2))) srm1
+		on tick:yield (100000000*(1+(prestige*2))) fame
+		on tick:yield (100000000*(1+(prestige*2))) srm1
 		req:2000000000000 fame:earned
 
 	*yearlyReview
@@ -378,8 +378,8 @@ Buildings
         tag:building
         tag:canlose
 		cost:12500000000000000000000000 fame
-		on tick:yield (100000000*(1+(prestige*2))) fame
-		on tick:yield (100000000*(1+(prestige*2))) yrm1
+		on tick:yield (10000000000*(1+(prestige*2))) fame
+		on tick:yield (10000000000*(1+(prestige*2))) yrm1
 		req:20000000000000000 fame:earned
 
 
