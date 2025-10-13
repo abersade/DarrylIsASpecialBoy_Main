@@ -603,12 +603,12 @@ Upgrades
 
 	*cubeRaid2
 		name:An Old Christmas Card?
-		desc:Why wasn't this thrown out. Increases your Fame generation from Cubicle Raid by 15000%.
+		desc:Why wasn't this thrown out. Increases your Fame generation from Cubicle Raid by 10000%.
 		icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524808/pirate-businessman-holding-hammer-isolated-260nw-746036017.jpg?1760378685
         tag:upgrade
         tag:canlose
 		cost:30000000 infamy
-        passive:multiply tag:resg yield of cubicleRaid by 150
+        passive:multiply tag:resg yield of cubicleRaid by 100
 		req:350 cubicleRaid
 
 	*cubeRaid3
@@ -618,7 +618,7 @@ Upgrades
         tag:upgrade
         tag:canlose
 		cost:150000000 infamy
-        passive:multiply tag:resg yield of cubicleRaid by 150
+        passive:multiply tag:resg yield of cubicleRaid by 100
 		req:475 cubicleRaid
 
 	*towelsup1
