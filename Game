@@ -987,6 +987,13 @@ Achievements
         icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524088/podracing1.png?1760025126
 		tag:prestige
 
+  	*theEnd
+		name:Sometimes Exceeds Expectations
+		desc:Congratulations Darryl, you truly are the most special. Thanks for playing this stupid game. Earned by beating the game.
+		req:1 yearlyReview
+        icon:https://db4sgowjqfwig.cloudfront.net/campaigns/116239/assets/1524850/scale.png?1760390123
+		tag:prestige
+
   	*whoops
 		name:Shouldn't Have Done That
 		desc: Can't Say I Didn't Warn You.
